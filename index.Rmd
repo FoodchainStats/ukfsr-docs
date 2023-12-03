@@ -1,7 +1,7 @@
 --- 
 title: "UK Food Security Report Guidance"
-author: "John Doe"
-date: "`r Sys.Date()`"
+author: "Food Statistics Team"
+date: "Last updated: `r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -17,7 +17,7 @@ github-repo: rstudio/bookdown-demo
 
 # About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+This is an experimental book/website for documentation and guidance relating to the UKFSR.
 
 ## Usage 
 

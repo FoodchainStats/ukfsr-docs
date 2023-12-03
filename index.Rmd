@@ -17,7 +17,7 @@ github-repo: rstudio/bookdown-demo
 
 # About
 
-This is an experimental book/website for documentation and guidance relating to the UKFSR.
+This is an experimental book/website for documentation and guidance relating to the UKFSR. The source is [here](https://github.com/FoodchainStats/ukfsr-docs).
 
 ## Usage 
 

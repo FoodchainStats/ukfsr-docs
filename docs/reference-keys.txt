@@ -1,6 +1,20 @@
 about
 usage
 text
+gov.uk-style-guide
+ukfsr-specific-guidance
+spellingword-choice
+references
+general
+acronyms
+labelling-data
+headings
+the-voice
+e.g.-i.e.-etc.
+symbols
+numbers
+quotation-marks
+sentence-length
 chart
 data-guide
 theme-guides
@@ -9,3 +23,4 @@ theme-2
 theme-3
 theme-4
 theme-5
+physical-print-edition

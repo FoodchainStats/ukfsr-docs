@@ -1,0 +1,5 @@
+# Physical print edition
+
+- master/child docs
+- mirror margins
+- pagination

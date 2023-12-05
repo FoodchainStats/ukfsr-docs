@@ -23,4 +23,5 @@ theme-2
 theme-3
 theme-4
 theme-5
+web-publishing
 physical-print-edition

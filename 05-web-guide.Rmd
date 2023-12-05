@@ -1,0 +1,4 @@
+# Web publishing
+
+- image specs
+- pandoc process

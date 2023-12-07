@@ -18,3 +18,17 @@ pandoc_convert(input = 'FILENAME.docx',
 
 ```
 
+## Graphics
+
+Images must be 960 pixels wide by 640 pixels high at 72 dpi.
+SVGs can be any size and do not need resizing before uploading.
+
+## Other useful things
+
+### Acronym markdown
+
+Add to end of file, each one on a newline
+
+```
+*[UKFSR]: UK Food Security Report
+```

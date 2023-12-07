@@ -26,4 +26,7 @@ theme-4
 theme-5
 web-publishing-guidance
 converting-word-documents-to-markdown
+graphics
+other-useful-things
+acronym-markdown
 physical-print-edition

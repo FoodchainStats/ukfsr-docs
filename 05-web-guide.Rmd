@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Web publishing guidance
 
 - image restrictions
@@ -17,3 +18,9 @@ pandoc_convert(input = 'FILENAME.docx',
                            "--extract-media=./images/"))
 
 ```
+=======
+# Web publishing
+
+- image specs
+- pandoc process
+>>>>>>> e4329b29285a271a48501b769920a7d7824b05f5

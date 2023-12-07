@@ -16,6 +16,7 @@ numbers
 quotation-marks
 sentence-length
 chart
+colours
 data-guide
 theme-guides
 theme-1
@@ -23,4 +24,6 @@ theme-2
 theme-3
 theme-4
 theme-5
+web-publishing-guidance
 physical-print-edition
+converting-word-documents-to-markdown

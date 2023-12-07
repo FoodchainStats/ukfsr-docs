@@ -1,0 +1,19 @@
+# Web publishing guidance
+
+- image restrictions
+- acronyms markdown
+
+## Converting Word documents to markdown
+
+R code for 
+
+```
+library(rmarkdown)
+pandoc_convert(input = 'FILENAME.docx',
+               to="markdown_mmd",
+               output = "FILENAME.md", 
+               options = c("--wrap=none",
+                           "--reference-links",
+                           "--extract-media=./images/"))
+
+```

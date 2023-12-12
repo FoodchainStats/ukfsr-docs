@@ -1,8 +1,5 @@
 # Web publishing guidance
 
-- image restrictions
-- acronyms markdown
-
 ## Converting Word documents to markdown
 
 R code for 

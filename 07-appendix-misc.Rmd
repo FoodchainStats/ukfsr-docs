@@ -1,0 +1,33 @@
+# (APPENDIX) Appendix {-}
+
+# Miscellaneous
+
+## Legal basis
+
+[Agriculture Act 2020](https://www.legislation.gov.uk/ukpga/2020/21/part/2/chapter/1/enacted)
+
+## Publication deadline
+
+Insert legal guidance
+
+## General legal guidance from 2024
+
+### Late laying of the report
+
+The starting point is that there is a clear statutory duty to lay the report by the last sitting day before Christmas day (s19(3) of the Agriculture Act 2020). Although the Act states “In this section “relevant day” means the last day before 25 December 2021 which is a sitting day for both Houses of Parliament.”, I think we can safely assume that the last sitting day before 25 December 2024 is correct. If the report is laid later than this date there would be a breach of this statutory duty. The risk of a legal challenge being brought (our assessment is that there would be a low risk (less than 30%)) would depend on the circumstances that caused the delay and the length of the delay. However, if it is brought the chances of successful challenge are medium-high (50-70%) given that there is a clear statutory duty to publish by a certain date. We could perhaps mitigate this depending on the circumstances which would lower the risk. For example, the Courts would likely look more favourably on SoS if the reason for delay was an election. However, if you know there will be an election then steps should be taken to avoid delay as much as possible. In short, unavoidable circumstances would look more favourable to the Courts than avoidable ones.
+
+
+### Environmental principles policy 
+We have considered whether the Environmental principles policy would apply here. Section 17(5) of the Environment Act 2021 sets out 5 principles that ministers will need to consider when making policy, namely:
+
+ - integration principle
+ - prevention principle
+ - rectification at source principle
+ - polluter pays principle
+ - precautionary principle
+
+Whilst any particular concerns arising from considerations in the EPP statement will likely not apply when collecting data and compiling the report, any policy development that follows on from the reports’ findings should have due regard to the principles. This is just something to flag at this stage.
+
+### General considerations
+Lastly, and as a general legal point, if the contents of the report were to be challenged, the ground would likely be rationality. It is therefore important that information sources are referenced correctly and checked. The 2021 report will of course provide an excellent starting point and seeing as that was not challenged, adopting a similar approach would be sensible.
+

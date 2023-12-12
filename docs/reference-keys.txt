@@ -30,3 +30,10 @@ graphics
 other-useful-things
 acronym-markdown
 physical-print-edition
+miscellaneous
+legal-basis
+publication-deadline
+general-legal-guidance-from-2024
+late-laying-of-the-report
+environmental-principles-policy
+general-considerations

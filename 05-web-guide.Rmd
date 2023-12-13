@@ -1,5 +1,12 @@
 # Web publishing guidance
 
+## Logistics
+
+Web publishing for statistics is handled by a small number of people who are accredited to use whitehall Publisher. We are fortunate to have two publishers in the food team. But there is an overhead. **Factor in prep for web time! (ideally 1 week)** 
+
+- web team to commandeer additional resource to cover secondeyes etc process during web print conversion
+
+
 ## Converting Word documents to markdown
 
 R code for 

@@ -7,6 +7,10 @@ For chart design guidance, see Section \@ref(chart).
 
 Guidance for all content published on gov.uk is available [here](https://www.gov.uk/guidance/style-guide)
 
+## Formatting
+
+- use appropriate styles, particularly for headings. These needed when building the master publications
+
 ## UKFSR specific guidance
 
 Some of this may replicate the GDS advice.

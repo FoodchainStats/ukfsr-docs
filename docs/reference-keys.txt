@@ -2,6 +2,7 @@ about
 usage
 text
 gov.uk-style-guide
+formatting
 ukfsr-specific-guidance
 spellingword-choice
 references
@@ -25,11 +26,15 @@ theme-3
 theme-4
 theme-5
 web-publishing-guidance
+logistics
 converting-word-documents-to-markdown
 graphics
 other-useful-things
 acronym-markdown
 physical-print-edition
+final-word-version
+create-pdf
+accessibility
 miscellaneous
 legal-basis
 publication-deadline

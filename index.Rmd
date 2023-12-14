@@ -25,8 +25,8 @@ The plan is to capture everything related to UKFSR2024 production based on lesso
 
 We aim for a logical structure, but there may be some nuggets dropped in unusual places. Its a brain dump!
 
-We are working in the open, so this is not a Defra Sharepoint repository but a public Github one. We know that this means its not quite so accessible for policy professionals, but we will work on this. We are allowed to have internal conversations. We don't put anything in here that we are not prepared to make public - its for future teams, to make sure weve captured all the useful info to make their lives easier. If there are sensitive messages/lessons, we store them somewhere else.
+We are working in the open, so this is not a Defra Sharepoint repository but a public Github one. We know that this means its not quite so accessible for policy professionals, but we will work on this. We are allowed to have internal conversations. We don't put anything in here that we are not prepared to make public - its for future teams, to make sure we've captured all the useful info to make their lives easier. If there are sensitive messages/lessons, we store them somewhere else.
 
 This approach mirrors our approach to data and the production process: we are storing the relevant code we use to wrangle data and produce graphics in a similar repository. Data that is not open will of course not be shared.
 
-Being as open and reproducible as we can is one of the current ambitions for official statistics production. This site is part of our way of trying to meet that ambition. That does not mean we will not make necessary internal decisions as needed - those will be recorded approporiately and documented safely elsewhere.  
+Being as open and reproducible as we can is one of the current ambitions for official statistics production. This site is part of our way of trying to meet that ambition. That does not mean we will not make necessary internal decisions as needed - those will be recorded appropriately and documented safely elsewhere.  

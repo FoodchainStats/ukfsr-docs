@@ -6,7 +6,7 @@ The logistics of print will depend on the service used to create the print editi
 
 ## Final Word version
 
-The assumption is that the final version will be contained in multiple Word files: one for each theme plus intoductions, appendices, glossary, etc. Once these are finalised a master print version can be produced.
+The assumption is that the final version will be contained in multiple Word files: one for each theme plus introductions, appendices, glossary, etc. Once these are finalised a master print version can be produced.
 
 - 'Lock' the content:  set a deadline and get everyone out of the Sharepoint documents
 - copy the final section docs into a new folder: this folder is the master print content
@@ -15,13 +15,13 @@ The assumption is that the final version will be contained in multiple Word file
 - check any standard copyright notice text
 - check other cover/back cover/inside cover text: last time there was specific wording like 'laid before the HoC Library on _date_' that needed to conform with protocol.
 
-With this cover sheet insert the section docs as 'child documents'. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. ONce all the content is in place, we can turn ro formatting for print:
+With this cover sheet insert the section docs as 'subdocuments', in outline view. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. ONce all the content is in place, we can turn ro formatting for print:
 
 - Margins: each section of the report needs to be formatted with mirror margins so that there is a larger gutter where the binding will be. Otherwise the content will get lost in the printed doc.
-- Page numbering: inside and outside so that they appear on the right and left hand side of the printed page. You need to set page numbers to inherit from each previous section so that they flow from 1-n and dont reset at the start of each child doc. 
-- Pagination: this was a bit of a fiddle last time. Make sure that the content is settled (You probably want to eyeball the content for any errors with heading levels etc and fix all content snags before doing this or else youll have to do it again). Refresh the TOC, and then go through inserting white space where necessary to ensure page breaks don't occur in unfortunate places. 
+- Page numbering: inside and outside so that they appear on the right and left hand side of the printed page. You need to set page numbers to inherit from each previous section so that they flow from 1-n and don't reset at the start of each child doc. 
+- Pagination: this was a bit of a fiddle last time. Make sure that the content is settled (You probably want to eyeball the content for any errors with heading levels etc and fix all content snags before doing this or else you'll have to do it again). Refresh the TOC, and then go through inserting white space where necessary to ensure page breaks don't occur in unfortunate places. 
 
-At this point the document should be redy for PDF conversion.
+At this point the document should be ready for PDF conversion.
 
 ## Create PDF
 
@@ -29,4 +29,4 @@ At this point it should be easy: export the master Word doc to PDF (PDF/A I thin
 
 ## Accessibility
 
-There was an unfulfilled request for a large print version last time. With a bit of luck, any MPs with such requirements will accept the html version as accessible, zoomable and sreen reader friendly. If not, repeat the document conversion process and edit the style definitions to up the font size. I think there might be practical printing issues which mean it would have to be printed as multiple documents. UKFSR at 300 odd pages I think was approaching the limit of what perfect binding print can handle. Speak to the print supplier about these issues.
+There was an unfulfilled request for a large print version last time. With a bit of luck, any MPs with such requirements will accept the HTML version as accessible, zoomable and screen reader friendly. If not, repeat the document conversion process and edit the style definitions to up the font size. I think there might be practical printing issues which mean it would have to be printed as multiple documents. UKFSR at 300 odd pages I think was approaching the limit of what perfect binding print can handle. Speak to the print supplier about these issues.

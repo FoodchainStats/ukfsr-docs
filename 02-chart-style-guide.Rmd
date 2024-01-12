@@ -7,3 +7,14 @@ produced by the [Analysis Function](https://analysisfunction.civilservice.gov.uk
 ## Colours
 
 The UKFSR uses the Analysis Function palette as recommended [here](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/). There is an R package, `afcolours` available on CRAN, which helps with implementing the [palette](https://best-practice-and-impact.github.io/afcolours/).
+
+## Chart context
+
+Eache chart is accompanied by some additional features:
+
+- CSV: the csv of the chart data is required for a preview/download link
+- URL to source: the default is a kink to collection pages wherever possible.
+
+## Resolution/format
+
+SVG/PNG

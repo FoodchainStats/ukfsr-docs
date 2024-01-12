@@ -99,6 +99,8 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="3" data-path="chart.html"><a href="chart.html"><i class="fa fa-check"></i><b>3</b> Chart Style Guide</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="chart.html"><a href="chart.html#colours"><i class="fa fa-check"></i><b>3.1</b> Colours</a></li>
+<li class="chapter" data-level="3.2" data-path="chart.html"><a href="chart.html#chart-context"><i class="fa fa-check"></i><b>3.2</b> Chart context</a></li>
+<li class="chapter" data-level="3.3" data-path="chart.html"><a href="chart.html#resolutionformat"><i class="fa fa-check"></i><b>3.3</b> Resolution/format</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data-guide.html"><a href="data-guide.html"><i class="fa fa-check"></i><b>4</b> Data guide</a>
 <ul>
@@ -106,7 +108,8 @@ built up from previous UKFSR production experiences.</p>" />
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="data-guide.html"><a href="data-guide.html#access"><i class="fa fa-check"></i><b>4.1.1</b> Access</a></li>
 <li class="chapter" data-level="4.1.2" data-path="data-guide.html"><a href="data-guide.html#structure"><i class="fa fa-check"></i><b>4.1.2</b> Structure</a></li>
-<li class="chapter" data-level="4.1.3" data-path="data-guide.html"><a href="data-guide.html#code"><i class="fa fa-check"></i><b>4.1.3</b> Code</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-guide.html"><a href="data-guide.html#file-naming-convention"><i class="fa fa-check"></i><b>4.1.3</b> File naming convention</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-guide.html"><a href="data-guide.html#code"><i class="fa fa-check"></i><b>4.1.4</b> Code</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="data-guide.html"><a href="data-guide.html#format"><i class="fa fa-check"></i><b>4.2</b> Format</a></li>
 </ul></li>
@@ -173,7 +176,7 @@ built up from previous UKFSR production experiences.</p>" />
 <p>How we prepare and organise data.</p>
 <div id="storage" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Storage<a href="data-guide.html#storage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Raw data is stored in the Amazon s3 bucket <code>s3-ranch-054</code>. Storage is certified
+<p>Raw data is stored in the Amazon S3 bucket <code>s3-ranch-054</code>. Storage is certified
 for sensitive data (although most data should be public domain).</p>
 <div id="access" class="section level3 hasAnchor" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Access<a href="data-guide.html#access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -188,17 +191,96 @@ x &lt;- aws.s3::s3read_using(FUN = readr::read_csv,
 </div>
 <div id="structure" class="section level3 hasAnchor" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Structure<a href="data-guide.html#structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>TBD</p>
+<p>Here is the current suggested structure for the S3 bucket folders:</p>
+<table>
+<colgroup>
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+<col width="8%" />
+<col width="67%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level 1</th>
+<th>Level 2</th>
+<th>Level 3</th>
+<th>Level 4</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ThemeX</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Top level</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>TX.n</td>
+<td></td>
+<td></td>
+<td>Indicator number (include description?)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>data</td>
+<td></td>
+<td>Raw data in any form can be stored here.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>output</td>
+<td>graphics</td>
+<td>Contains png and svg final graphic files</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td>csv</td>
+<td>Contains final csv required to reproduce the graphics in R. In tidy format.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>misc</td>
+<td></td>
+<td>Optional folder to store random files, eg map shapefiles.</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="code" class="section level3 hasAnchor" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Code<a href="data-guide.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024" class="uri">https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024</a></p>
+<div id="file-naming-convention" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> File naming convention<a href="data-guide.html#file-naming-convention" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>UKFSR content files must adhere to a naming convention. Supplementary files such
+as raw data etc can be more fluid, although we recommend includint theme/
+indicator numbers. If in doubt, err on the side of long descriptive file names -
+its 3 years befoer anyone will look at these again!</p>
+<p><strong>Content filename template</strong></p>
+<p><code>TX_X.n_description.svg/png/csv</code></p>
+<p>where:</p>
+<ul>
+<li><p><code>X</code> is theme number</p></li>
+<li><p><code>n</code> is indicator number</p></li>
+<li><p><code>description</code> needs to be enough to uniquely describe the content. Use <em>snake_case</em> as necessary.</p></li>
+<li><p><strong>filetype</strong> must be <code>csv</code> for data, <code>svg</code>/<code>png</code> for web/print respectively</p></li>
+</ul>
+</div>
+<div id="code" class="section level3 hasAnchor" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> Code<a href="data-guide.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at <a href="https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024">https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024</a>. It is crucial that the content code for graphics and related output is captured here.</p>
 </div>
 </div>
 <div id="format" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Format<a href="data-guide.html#format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The data underlying each chart needs to be stored in csv format. This is so we
 can offer a preview link for the data alongside each chart.</p>
+<p><strong>GDS Transport font!!</strong></p>
 
 </div>
 </div>

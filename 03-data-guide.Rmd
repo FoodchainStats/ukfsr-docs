@@ -4,7 +4,7 @@ How we prepare and organise data.
 
 ## Storage
 
-Raw data is stored in the Amazon s3 bucket `s3-ranch-054`. Storage is certified
+Raw data is stored in the Amazon S3 bucket `s3-ranch-054`. Storage is certified
 for sensitive data (although most data should be public domain).
 
 
@@ -24,14 +24,47 @@ x <- aws.s3::s3read_using(FUN = readr::read_csv,
 
 ### Structure
 
-TBD
+Here is the current suggested structure for the S3 bucket folders:
+
+| Level 1 | Level 2 | Level 3 | Level 4  | Comments                                                                    |
+|---------|---------|---------|----------|-----------------------------------------------------------------------------|
+| ThemeX  |         |         |          | Top level                                                                   |
+|         | TX.n    |         |          | Indicator number (include description?)                                     |
+|         |         | data    |          | Raw data in any form can be stored here.                                    |
+|         |         | output  | graphics | Contains png and svg final graphic files                                    |
+|         |         |         | csv      | Contains final csv required to reproduce the graphics in R. In tidy format. |
+|         |         | misc    |          | Optional folder to store random files, eg map shapefiles.                   |
+
+### File naming convention
+
+UKFSR content files must adhere to a naming convention. Supplementary files such
+as raw data etc can be more fluid, although we recommend includint theme/
+indicator numbers. If in doubt, err on the side of long descriptive file names -
+its 3 years befoer anyone will look at these again!
+
+**Content filename template**
+
+`TX_X.n_description.svg/png/csv`
+
+where:
+
+- `X` is theme number
+
+- `n` is indicator number
+
+- `description` needs to be enough to uniquely describe the content. Use *snake_case* as necessary.
+
+- **filetype** must be `csv` for data, `svg`/`png` for web/print respectively
+
 
 ### Code
 
-https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024
+The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at [https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024](https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024). It is crucial that the content code for graphics and related output is captured here.
 
 
 ## Format
 
 The data underlying each chart needs to be stored in csv format. This is so we
 can offer a preview link for the data alongside each chart.
+
+**GDS Transport font!!**

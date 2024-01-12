@@ -18,10 +18,13 @@ quotation-marks
 sentence-length
 chart
 colours
+chart-context
+resolutionformat
 data-guide
 storage
 access
 structure
+file-naming-convention
 code
 format
 theme-guides

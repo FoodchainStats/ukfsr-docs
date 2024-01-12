@@ -16,9 +16,55 @@ Insert legal guidance
 
 ## General legal guidance from 2024
 
+## Publication deadline
+
+[from legal comments 11/01/2024]
+
+The date you should lay the report is actually 3 years from the date of the last
+report so that would be the 15 December 2024 (although note that this is a
+Sunday so the last sitting day before this date would be appropriate). There is
+no reason not to publish before this date if needed and it would be advisable
+not to leave it to the last possible date. Section 19 of the Agriculture Act
+2020 states that **a new UKFSR is required “at least once every three years”**. We
+think that the safest way to interpret this would be that each UKFSR laying
+starts a three-year ‘clock’ by which another UKFSR must be published. As the
+first UKFSR was laid in Parliament on December 16 2021, the three-year clock
+means that the next must be laid by December 15 2024, but can be any time
+before. If UKFSR2 is instead laid on, for instance, September 1 2024, UKFSR3
+will have to be laid by August 31 2027. 
+
+Also please note that although preferable, **Parliament does not absolutely have
+to be sitting for a paper to be laid.** This has previously been considered by
+policy and legal and whilst the UKFSR was published as an Act paper, if it must
+be published on a non-sitting day in order to avoid breaching statutory duties,
+Parliamentary Team consider that it could in exceptional circumstances be laid
+as a Command Paper with the full knowledge of the Journal Office and with the
+relevant changes made to its cover. This may not be necessary in future but for
+now it is advisable.
+
+**Further, the UKFSR is Official Statistics**, which require notice of publication
+at least four weeks before the intended publication date, and publication on
+that date. Once the date is pre-notified, any failure to publish on that date
+will invite scrutiny from the Office of Statistical Regulation. This does not
+touch on any of the other rules, but if coming out on the same day should take
+account of the time it takes to lay documents in Parliament, so the next UKFSR
+should probably commit to publish at noon or so rather than 0930.
+
+
+
 ### Late laying of the report
 
-The starting point is that there is a clear statutory duty to lay the report by the last sitting day before Christmas day (s19(3) of the Agriculture Act 2020). Although the Act states “In this section “relevant day” means the last day before 25 December 2021 which is a sitting day for both Houses of Parliament.”, I think we can safely assume that the last sitting day before 25 December 2024 is correct. If the report is laid later than this date there would be a breach of this statutory duty. The risk of a legal challenge being brought (our assessment is that there would be a low risk (less than 30%)) would depend on the circumstances that caused the delay and the length of the delay. However, if it is brought the chances of successful challenge are medium-high (50-70%) given that there is a clear statutory duty to publish by a certain date. We could perhaps mitigate this depending on the circumstances which would lower the risk. For example, the Courts would likely look more favourably on SoS if the reason for delay was an election. However, if you know there will be an election then steps should be taken to avoid delay as much as possible. In short, unavoidable circumstances would look more favourable to the Courts than avoidable ones.
+If the report is laid later than deadline date there would be a breach of this
+statutory duty. The risk of a legal challenge being brought (our assessment is
+that there would be a low risk (less than 30%)) would depend on the
+circumstances that caused the delay and the length of the delay. However, if it
+is brought the chances of successful challenge are medium-high (50-70%) given
+that there is a clear statutory duty to publish by a certain date. We could
+perhaps mitigate this depending on the circumstances which would lower the risk.
+For example, the Courts would likely look more favourably on SoS if the reason
+for delay was an election. However, if you know there will be an election then
+steps should be taken to avoid delay as much as possible. In short, unavoidable
+circumstances would look more favourable to the Courts than avoidable ones.
 
 
 ### Environmental principles policy 

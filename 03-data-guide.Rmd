@@ -2,4 +2,36 @@
 
 How we prepare and organise data.
 
+## Storage
 
+Raw data is stored in the Amazon s3 bucket `s3-ranch-054`. Storage is certified
+for sensitive data (although most data should be public domain).
+
+
+### Access
+
+The bucket is accessible from across Defra (?)
+
+```
+library(aws.s3)
+
+contents <- get_bucket_df("s3-ranch-054")
+
+x <- aws.s3::s3read_using(FUN = readr::read_csv,
+                                      bucket = "s3-ranch-054",
+                                      object = "example.csv")
+```
+
+### Structure
+
+TBD
+
+### Code
+
+https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024
+
+
+## Format
+
+The data underlying each chart needs to be stored in csv format. This is so we
+can offer a preview link for the data alongside each chart.

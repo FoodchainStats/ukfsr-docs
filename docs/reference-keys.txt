@@ -19,6 +19,11 @@ sentence-length
 chart
 colours
 data-guide
+storage
+access
+structure
+code
+format
 theme-guides
 theme-1
 theme-2
@@ -40,6 +45,7 @@ legal-basis
 osr-feedback-on-ukfsr2021
 publication-deadline
 general-legal-guidance-from-2024
+publication-deadline-1
 late-laying-of-the-report
 environmental-principles-policy
 general-considerations

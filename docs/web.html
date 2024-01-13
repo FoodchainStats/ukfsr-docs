@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | UK Food Security Report Guidance</title>
+  <title>Section 6 Web publishing guidance | UK Food Security Report Guidance</title>
   <meta name="description" content="<p>Guidance documentation for the production of the UK Food Security Report.
 Contains style guides, publication guidance and miscellaneous infomation
 built up from previous UKFSR production experiences.</p>" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | UK Food Security Report Guidance" />
+  <meta property="og:title" content="Section 6 Web publishing guidance | UK Food Security Report Guidance" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>Guidance documentation for the production of the UK Food Security Report.
@@ -19,7 +19,7 @@ built up from previous UKFSR production experiences.</p>" />
   <meta name="github-repo" content="FoodchainStats/ukfsr-docs" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | UK Food Security Report Guidance" />
+  <meta name="twitter:title" content="Section 6 Web publishing guidance | UK Food Security Report Guidance" />
   
   <meta name="twitter:description" content="<p>Guidance documentation for the production of the UK Food Security Report.
 Contains style guides, publication guidance and miscellaneous infomation
@@ -35,8 +35,8 @@ built up from previous UKFSR production experiences.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="theme-guides.html"/>
+<link rel="next" href="print.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -173,19 +173,63 @@ built up from previous UKFSR production experiences.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="web" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Section 6</span> Web publishing guidance<a href="web.html#web" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="overview" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Overview<a href="web.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The report is most likely drafted in Word, on a Sharepoint repository. This is
+the most effective way to create the content in a multiuser environment, but
+eventually this needs to be converted for publication on gov.uk. This process,
+as with preparing for the physical print (Section <a href="print.html#print">7</a>) has a resource
+and time overhead.</p>
+<p><strong>Factor in prep for web time! (ideally 1 week) and lock the text</strong></p>
+<p>The text must be converted to ‘Govspeak’, a flavour of Markdown. Graphics must
+be saved as separate files and uploaded to the publishing system. CSV files of
+data must also be prepared.</p>
+<p>Web publishing for statistics is handled by a small number of people who are
+accredited to use Whitehall Publisher. We are fortunate to have two publishers
+in the food team. But there is an overhead.</p>
+<ul>
+<li>web team to commandeer additional resource to cover second-eyes etc process during web print conversion</li>
+</ul>
+</div>
+<div id="logistics" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Logistics<a href="web.html#logistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="converting-word-documents-to-markdown" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Converting Word documents to markdown<a href="web.html#converting-word-documents-to-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R code for</p>
+<pre><code>library(rmarkdown)
+pandoc_convert(input = &#39;FILENAME.docx&#39;,
+               to=&quot;markdown_mmd&quot;,
+               output = &quot;FILENAME.md&quot;, 
+               options = c(&quot;--wrap=none&quot;,
+                           &quot;--reference-links&quot;,
+                           &quot;--extract-media=./images/&quot;))
+</code></pre>
+</div>
+<div id="graphics" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Graphics<a href="web.html#graphics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Images must be 960 pixels wide by 640 pixels high at 72 dpi.
+SVGs can be any size and do not need resizing before uploading.</p>
+</div>
+<div id="other-useful-things" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Other useful things<a href="web.html#other-useful-things" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="acronym-markdown" class="section level3 hasAnchor" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> Acronym markdown<a href="web.html#acronym-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Add to end of file, each one on a newline</p>
+<pre><code>*[UKFSR]: UK Food Security Report</code></pre>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="theme-guides.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="print.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

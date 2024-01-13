@@ -1,12 +1,17 @@
 # Chart Style Guide {#chart}
 
 This section will cover guidance on chart design and themes. For the text
-styleguide, see Chapter \@ref(text). There is general guidance on chart design
+styleguide, see Section \@ref(text). There is general guidance on chart design
 produced by the [Analysis Function](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/).
+
+**Please refer to Section \@ref(data) on preparing data for charting and publication as preview csv data.**
 
 ## Colours
 
 The UKFSR uses the Analysis Function palette as recommended [here](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/). There is an R package, `afcolours` available on CRAN, which helps with implementing the [palette](https://best-practice-and-impact.github.io/afcolours/).
+
+There are a maximum of 6 colours available in the palette for categorical
+variables. This means that an individual chart may not have more than 6 series.
 
 ## Chart context
 

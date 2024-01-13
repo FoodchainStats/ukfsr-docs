@@ -29,4 +29,8 @@ We are working in the open, so this is not a Defra Sharepoint repository but a p
 
 This approach mirrors our approach to data and the production process: we are storing the relevant code we use to wrangle data and produce graphics in a similar repository. Data that is not open will of course not be shared.
 
-Being as open and reproducible as we can is one of the current ambitions for official statistics production. This site is part of our way of trying to meet that ambition. That does not mean we will not make necessary internal decisions as needed - those will be recorded appropriately and documented safely elsewhere.  
+Being as open and reproducible as we can is one of the current ambitions for official statistics production. This site is part of our way of trying to meet that ambition. That does not mean we will not make necessary internal decisions as needed - those will be recorded appropriately and documented safely elsewhere. 
+
+## UKFSR Infrastructure
+
+Git, S3, Sharepoint

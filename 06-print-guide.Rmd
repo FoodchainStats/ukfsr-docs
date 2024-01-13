@@ -1,8 +1,12 @@
-# Physical print edition
+# Physical print edition {#print}
 
-The logistics of print will depend on the service used to create the print edition. For UKFSR2021 the printers needed a PDF of the final document to turn into the final laid report.
+The logistics of print will depend on the service used to create the print
+edition. For UKFSR2021 the printers needed a PDF of the final document to turn
+into the final laid report.
 
-**Factor in print publication time! (ideally 1 week)**
+**Factor in print publication time! (ideally 1 week) and lock the text**
+
+Do not forget that preparing for web publishing (Section \@ref(web)) is a separate and different process that also requires time and resources.
 
 ## Final Word version
 
@@ -15,11 +19,12 @@ The assumption is that the final version will be contained in multiple Word file
 - check any standard copyright notice text
 - check other cover/back cover/inside cover text: last time there was specific wording like 'laid before the HoC Library on _date_' that needed to conform with protocol.
 
-With this cover sheet insert the section docs as 'subdocuments', in outline view. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. ONce all the content is in place, we can turn ro formatting for print:
+With this cover sheet insert the section docs as 'subdocuments', in outline view. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. Once all the content is in place, we can turn to formatting for print:
 
 - Margins: each section of the report needs to be formatted with mirror margins so that there is a larger gutter where the binding will be. Otherwise the content will get lost in the printed doc.
 - Page numbering: inside and outside so that they appear on the right and left hand side of the printed page. You need to set page numbers to inherit from each previous section so that they flow from 1-n and don't reset at the start of each child doc. 
 - Pagination: this was a bit of a fiddle last time. Make sure that the content is settled (You probably want to eyeball the content for any errors with heading levels etc and fix all content snags before doing this or else you'll have to do it again). Refresh the TOC, and then go through inserting white space where necessary to ensure page breaks don't occur in unfortunate places. 
+- URLs: We dont need to worry about URLs working in a paper document, but in a PDF we might want clickable links. *This is pretty irrelevant to the final HTML publication (remember: the HTML is the publication, not some paper document!)*. Focus on maximising hyperlinks in the we b publication.
 
 At this point the document should be ready for PDF conversion.
 

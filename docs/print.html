@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | UK Food Security Report Guidance</title>
+  <title>Section 7 Physical print edition | UK Food Security Report Guidance</title>
   <meta name="description" content="<p>Guidance documentation for the production of the UK Food Security Report.
 Contains style guides, publication guidance and miscellaneous infomation
 built up from previous UKFSR production experiences.</p>" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | UK Food Security Report Guidance" />
+  <meta property="og:title" content="Section 7 Physical print edition | UK Food Security Report Guidance" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>Guidance documentation for the production of the UK Food Security Report.
@@ -19,7 +19,7 @@ built up from previous UKFSR production experiences.</p>" />
   <meta name="github-repo" content="FoodchainStats/ukfsr-docs" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | UK Food Security Report Guidance" />
+  <meta name="twitter:title" content="Section 7 Physical print edition | UK Food Security Report Guidance" />
   
   <meta name="twitter:description" content="<p>Guidance documentation for the production of the UK Food Security Report.
 Contains style guides, publication guidance and miscellaneous infomation
@@ -35,8 +35,8 @@ built up from previous UKFSR production experiences.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="web.html"/>
+<link rel="next" href="miscellaneous.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -173,19 +173,53 @@ built up from previous UKFSR production experiences.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="print" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Section 7</span> Physical print edition<a href="print.html#print" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The logistics of print will depend on the service used to create the print
+edition. For UKFSR2021 the printers needed a PDF of the final document to turn
+into the final laid report.</p>
+<p><strong>Factor in print publication time! (ideally 1 week) and lock the text</strong></p>
+<p>Do not forget that preparing for web publishing (Section <a href="web.html#web">6</a>) is a separate and different process that also requires time and resources.</p>
+<div id="final-word-version" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Final Word version<a href="print.html#final-word-version" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The assumption is that the final version will be contained in multiple Word files: one for each theme plus introductions, appendices, glossary, etc. Once these are finalised a master print version can be produced.</p>
+<ul>
+<li>‘Lock’ the content: set a deadline and get everyone out of the Sharepoint documents</li>
+<li>copy the final section docs into a new folder: this folder is the master print content</li>
+<li>get a copy of the Defra doc template which has a default front and back cover</li>
+<li>check and secure an ISBN/Defra document number</li>
+<li>check any standard copyright notice text</li>
+<li>check other cover/back cover/inside cover text: last time there was specific wording like ‘laid before the HoC Library on <em>date</em>’ that needed to conform with protocol.</li>
+</ul>
+<p>With this cover sheet insert the section docs as ‘subdocuments’, in outline view. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. Once all the content is in place, we can turn to formatting for print:</p>
+<ul>
+<li>Margins: each section of the report needs to be formatted with mirror margins so that there is a larger gutter where the binding will be. Otherwise the content will get lost in the printed doc.</li>
+<li>Page numbering: inside and outside so that they appear on the right and left hand side of the printed page. You need to set page numbers to inherit from each previous section so that they flow from 1-n and don’t reset at the start of each child doc.</li>
+<li>Pagination: this was a bit of a fiddle last time. Make sure that the content is settled (You probably want to eyeball the content for any errors with heading levels etc and fix all content snags before doing this or else you’ll have to do it again). Refresh the TOC, and then go through inserting white space where necessary to ensure page breaks don’t occur in unfortunate places.</li>
+<li>URLs: We dont need to worry about URLs working in a paper document, but in a PDF we might want clickable links. <em>This is pretty irrelevant to the final HTML publication (remember: the HTML is the publication, not some paper document!)</em>. Focus on maximising hyperlinks in the we b publication.</li>
+</ul>
+<p>At this point the document should be ready for PDF conversion.</p>
 </div>
+<div id="create-pdf" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Create PDF<a href="print.html#create-pdf" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>At this point it should be easy: export the master Word doc to PDF (PDF/A I think: check!). Worth checking accessibility even though the HTML version will be the truly accessible version. One thing worth checking: metadata. Check the author, organisation etc metadata in the word doc is what you want in the PDF version.</p>
+</div>
+<div id="accessibility" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Accessibility<a href="print.html#accessibility" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There was an unfulfilled request for a large print version last time. With a bit of luck, any MPs with such requirements will accept the HTML version as accessible, zoomable and screen reader friendly. If not, repeat the document conversion process and edit the style definitions to up the font size. I think there might be practical printing issues which mean it would have to be printed as multiple documents. UKFSR at 300 odd pages I think was approaching the limit of what perfect binding print can handle. Speak to the print supplier about these issues.</p>
+
+</div>
+</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="web.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="miscellaneous.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

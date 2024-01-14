@@ -1,5 +1,6 @@
 about
 usage
+ukfsr-infrastructure
 text
 gov.uk-style-guide
 formatting
@@ -20,7 +21,7 @@ chart
 colours
 chart-context
 resolutionformat
-data-guide
+data
 storage
 access
 structure
@@ -33,13 +34,14 @@ theme-2
 theme-3
 theme-4
 theme-5
-web-publishing-guidance
+web
+overview
 logistics
 converting-word-documents-to-markdown
 graphics
 other-useful-things
 acronym-markdown
-physical-print-edition
+print
 final-word-version
 create-pdf
 accessibility
@@ -52,9 +54,3 @@ publication-deadline-1
 late-laying-of-the-report
 environmental-principles-policy
 general-considerations
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
-data
-web
-print
-ukfsr-infrastructure
-overview

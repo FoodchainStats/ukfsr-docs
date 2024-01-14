@@ -23,3 +23,9 @@ Eache chart is accompanied by some additional features:
 ## Resolution/format
 
 SVG/PNG
+
+## Helpers
+
+We need a `theme_fsr` theme for chart styleing. Defaults like linewidth = 1.5
+for series need to be specified. We could have an fsr package a la ggfbs but is
+it sensible?

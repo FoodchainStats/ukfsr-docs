@@ -1,5 +1,5 @@
 about
-usage
+what-is-this-and-how-do-i-use-it
 ukfsr-infrastructure
 text
 gov.uk-style-guide
@@ -21,6 +21,7 @@ chart
 colours
 chart-context
 resolutionformat
+helpers
 data
 storage
 access
@@ -54,3 +55,4 @@ publication-deadline-1
 late-laying-of-the-report
 environmental-principles-policy
 general-considerations
+url-your-book-url-like-httpsbookdown.orgyihuibookdown

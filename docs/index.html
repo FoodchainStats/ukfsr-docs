@@ -83,7 +83,7 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-this-and-how-do-i-use-it"><i class="fa fa-check"></i><b>1.1</b> What is this and how do I use it?</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ukfsr-infrastructure"><i class="fa fa-check"></i><b>1.2</b> UKFSR Infrastructure</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="text.html"><a href="text.html"><i class="fa fa-check"></i><b>2</b> Text style guide</a>
@@ -102,6 +102,7 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="3.1" data-path="chart.html"><a href="chart.html#colours"><i class="fa fa-check"></i><b>3.1</b> Colours</a></li>
 <li class="chapter" data-level="3.2" data-path="chart.html"><a href="chart.html#chart-context"><i class="fa fa-check"></i><b>3.2</b> Chart context</a></li>
 <li class="chapter" data-level="3.3" data-path="chart.html"><a href="chart.html#resolutionformat"><i class="fa fa-check"></i><b>3.3</b> Resolution/format</a></li>
+<li class="chapter" data-level="3.4" data-path="chart.html"><a href="chart.html#helpers"><i class="fa fa-check"></i><b>3.4</b> Helpers</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> Data guide</a>
 <ul>
@@ -176,13 +177,13 @@ built up from previous UKFSR production experiences.</p>" />
 <div id="header">
 <h1 class="title">UK Food Security Report Guidance</h1>
 <p class="author"><em>Food Statistics Team</em></p>
-<p class="date"><em>Last updated: 14 January 2024, 12:15 pm</em></p>
+<p class="date"><em>Last updated: 16 January 2024, 21:02 pm</em></p>
 </div>
 <div id="about" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Section 1</span> About<a href="index.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This is an experimental book/website for documentation and guidance relating to the UKFSR. The source is <a href="https://github.com/FoodchainStats/ukfsr-docs">here</a>.</p>
-<div id="usage" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Usage<a href="index.html#usage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="what-is-this-and-how-do-i-use-it" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> What is this and how do I use it?<a href="index.html#what-is-this-and-how-do-i-use-it" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The plan is to capture everything related to UKFSR2024 production based on lessons from UKFSR2021 which might be useful, and end up with a repository to pick up again once UKFSR2027 is being planned.</p>
 <p>We aim for a logical structure, but there may be some nuggets dropped in unusual places. Its a brain dump!</p>
 <p>We are working in the open, so this is not a Defra Sharepoint repository but a public Github one. We know that this means its not quite so accessible for policy professionals, but we will work on this. We are allowed to have internal conversations. We don’t put anything in here that we are not prepared to make public - its for future teams, to make sure we’ve captured all the useful info to make their lives easier. If there are sensitive messages/lessons, we store them somewhere else.</p>
@@ -191,7 +192,19 @@ built up from previous UKFSR production experiences.</p>" />
 </div>
 <div id="ukfsr-infrastructure" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> UKFSR Infrastructure<a href="index.html#ukfsr-infrastructure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Git, S3, Sharepoint</p>
+<p>The UKFSR is more than just a single document. It has a number of components as part of its underlying infrastructure:</p>
+<ul>
+<li>The text content (probably drafted and hosted on Sharepoint during production)</li>
+<li>The underlying data and graphics content, hosted on an Amazon S3 bucket</li>
+<li>The code to produce the graphics, hosted on Github</li>
+<li>The code to produce the graphics data for preview, in csv format</li>
+<li>This documentation</li>
+</ul>
+<p>All of this content is combined to produce two key outputs:</p>
+<ul>
+<li>the report on gov.uk (this is the UKFSR to all intents and purposes for the public)</li>
+<li>the physical printed edition laid in the HoC Library</li>
+</ul>
 
 </div>
 </div>

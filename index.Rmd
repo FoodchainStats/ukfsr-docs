@@ -19,7 +19,7 @@ github-repo: FoodchainStats/ukfsr-docs
 
 This is an experimental book/website for documentation and guidance relating to the UKFSR. The source is [here](https://github.com/FoodchainStats/ukfsr-docs).
 
-## Usage 
+## What is this and how do I use it?
 
 The plan is to capture everything related to UKFSR2024 production based on lessons from UKFSR2021 which might be useful, and end up with a repository to pick up again once UKFSR2027 is being planned.
 
@@ -33,4 +33,15 @@ Being as open and reproducible as we can is one of the current ambitions for off
 
 ## UKFSR Infrastructure
 
-Git, S3, Sharepoint
+The UKFSR is more than just a single document. It has a number of components as part of its underlying infrastructure:
+
+- The text content (probably drafted and hosted on Sharepoint during production)
+- The underlying data and graphics content, hosted on an Amazon S3 bucket
+- The code to produce the graphics, hosted on Github
+- The code to produce the graphics data for preview, in csv format
+- This documentation
+
+All of this content is combined to produce two key outputs:
+
+- the report on gov.uk (this is the UKFSR to all intents and purposes for the public)
+- the physical printed edition laid in the HoC Library

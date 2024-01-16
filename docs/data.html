@@ -81,9 +81,9 @@ built up from previous UKFSR production experiences.</p>" />
 <li><a href="./">UK Food Security Report Guidance</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-this-and-how-do-i-use-it"><i class="fa fa-check"></i><b>1.1</b> What is this and how do I use it?</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ukfsr-infrastructure"><i class="fa fa-check"></i><b>1.2</b> UKFSR Infrastructure</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="text.html"><a href="text.html"><i class="fa fa-check"></i><b>2</b> Text style guide</a>
@@ -102,17 +102,18 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="3.1" data-path="chart.html"><a href="chart.html#colours"><i class="fa fa-check"></i><b>3.1</b> Colours</a></li>
 <li class="chapter" data-level="3.2" data-path="chart.html"><a href="chart.html#chart-context"><i class="fa fa-check"></i><b>3.2</b> Chart context</a></li>
 <li class="chapter" data-level="3.3" data-path="chart.html"><a href="chart.html#resolutionformat"><i class="fa fa-check"></i><b>3.3</b> Resolution/format</a></li>
+<li class="chapter" data-level="3.4" data-path="chart.html"><a href="chart.html#helpers"><i class="fa fa-check"></i><b>3.4</b> Helpers</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> Data guide</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="data.html"><a href="data.html#storage"><i class="fa fa-check"></i><b>4.1</b> Storage</a>
+<li class="chapter" data-level="4.1" data-path="data.html"><a href="data.html#format"><i class="fa fa-check"></i><b>4.1</b> Format</a></li>
+<li class="chapter" data-level="4.2" data-path="data.html"><a href="data.html#storage"><i class="fa fa-check"></i><b>4.2</b> Storage</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="data.html"><a href="data.html#access"><i class="fa fa-check"></i><b>4.1.1</b> Access</a></li>
-<li class="chapter" data-level="4.1.2" data-path="data.html"><a href="data.html#structure"><i class="fa fa-check"></i><b>4.1.2</b> Structure</a></li>
-<li class="chapter" data-level="4.1.3" data-path="data.html"><a href="data.html#file-naming-convention"><i class="fa fa-check"></i><b>4.1.3</b> File naming convention</a></li>
-<li class="chapter" data-level="4.1.4" data-path="data.html"><a href="data.html#code"><i class="fa fa-check"></i><b>4.1.4</b> Code</a></li>
+<li class="chapter" data-level="4.2.1" data-path="data.html"><a href="data.html#access"><i class="fa fa-check"></i><b>4.2.1</b> Access</a></li>
+<li class="chapter" data-level="4.2.2" data-path="data.html"><a href="data.html#structure"><i class="fa fa-check"></i><b>4.2.2</b> Structure</a></li>
+<li class="chapter" data-level="4.2.3" data-path="data.html"><a href="data.html#file-naming-convention"><i class="fa fa-check"></i><b>4.2.3</b> File naming convention</a></li>
+<li class="chapter" data-level="4.2.4" data-path="data.html"><a href="data.html#code"><i class="fa fa-check"></i><b>4.2.4</b> Code</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="data.html"><a href="data.html#format"><i class="fa fa-check"></i><b>4.2</b> Format</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="theme-guides.html"><a href="theme-guides.html"><i class="fa fa-check"></i><b>5</b> Theme guides</a>
 <ul>
@@ -176,12 +177,18 @@ built up from previous UKFSR production experiences.</p>" />
 <div id="data" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Section 4</span> Data guide<a href="data.html#data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>How we prepare and organise data.</p>
-<div id="storage" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Storage<a href="data.html#storage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="format" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Format<a href="data.html#format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The data underlying each chart needs to be stored in csv format. This is so we
+can offer a preview link for the data alongside each chart.</p>
+<p><strong>GDS Transport font!!</strong></p>
+</div>
+<div id="storage" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Storage<a href="data.html#storage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Raw data is stored in the Amazon S3 bucket <code>s3-ranch-054</code>. Storage is certified
 for sensitive data (although most data should be public domain).</p>
-<div id="access" class="section level3 hasAnchor" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Access<a href="data.html#access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="access" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Access<a href="data.html#access" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The bucket is accessible from across Defra (?)</p>
 <pre><code>library(aws.s3)
 
@@ -191,8 +198,8 @@ x &lt;- aws.s3::s3read_using(FUN = readr::read_csv,
                                       bucket = &quot;s3-ranch-054&quot;,
                                       object = &quot;example.csv&quot;)</code></pre>
 </div>
-<div id="structure" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Structure<a href="data.html#structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="structure" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Structure<a href="data.html#structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here is the current suggested structure for the S3 bucket folders:</p>
 <table>
 <colgroup>
@@ -213,7 +220,7 @@ x &lt;- aws.s3::s3read_using(FUN = readr::read_csv,
 </thead>
 <tbody>
 <tr class="odd">
-<td>ThemeX</td>
+<td>theme_X</td>
 <td></td>
 <td></td>
 <td></td>
@@ -221,10 +228,10 @@ x &lt;- aws.s3::s3read_using(FUN = readr::read_csv,
 </tr>
 <tr class="even">
 <td></td>
-<td>TX.n</td>
+<td>TX_s_n</td>
 <td></td>
 <td></td>
-<td>Indicator number (include description?)</td>
+<td>Indicator section and number (include description?)</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -257,33 +264,29 @@ x &lt;- aws.s3::s3read_using(FUN = readr::read_csv,
 </tbody>
 </table>
 </div>
-<div id="file-naming-convention" class="section level3 hasAnchor" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> File naming convention<a href="data.html#file-naming-convention" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="file-naming-convention" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> File naming convention<a href="data.html#file-naming-convention" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>UKFSR content files must adhere to a naming convention. Supplementary files such
 as raw data etc can be more fluid, although we recommend includint theme/
 indicator numbers. If in doubt, err on the side of long descriptive file names -
 its 3 years befoer anyone will look at these again!</p>
 <p><strong>Content filename template</strong></p>
-<p><code>TX_X.n_description.svg/png/csv</code></p>
+<p><code>TX_s_n_v_description.svg/png/csv</code></p>
 <p>where:</p>
 <ul>
 <li><p><code>X</code> is theme number</p></li>
+<li><p><code>s</code> is section number</p></li>
 <li><p><code>n</code> is indicator number</p></li>
+<li><p><code>v</code> is indicator variant, eg a,b,c, etc</p></li>
 <li><p><code>description</code> needs to be enough to uniquely describe the content. Use <em>snake_case</em> as necessary.</p></li>
 <li><p><strong>filetype</strong> must be <code>csv</code> for data, <code>svg</code>/<code>png</code> for web/print respectively</p></li>
 </ul>
 </div>
-<div id="code" class="section level3 hasAnchor" number="4.1.4">
-<h3><span class="header-section-number">4.1.4</span> Code<a href="data.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="code" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Code<a href="data.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at <a href="https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024">https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024</a>. It is crucial that the content code for graphics and related output is captured here.</p>
-</div>
-</div>
-<div id="format" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Format<a href="data.html#format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The data underlying each chart needs to be stored in csv format. This is so we
-can offer a preview link for the data alongside each chart.</p>
-<p><strong>GDS Transport font!!</strong></p>
 
+</div>
 </div>
 </div>
             </section>

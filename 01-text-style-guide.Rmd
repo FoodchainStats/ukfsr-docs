@@ -9,7 +9,7 @@ Guidance for all content published on gov.uk is available [here](https://www.gov
 
 ## Formatting
 
-- use appropriate styles, particularly for headings. These needed when building the master publications
+- use appropriate styles, particularly for *headings*. These are needed when building the master publications
 
 ## UKFSR specific guidance
 

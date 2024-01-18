@@ -17,31 +17,63 @@ github-repo: FoodchainStats/ukfsr-docs
 
 # About
 
-This is an experimental book/website for documentation and guidance relating to the UKFSR. The source is [here](https://github.com/FoodchainStats/ukfsr-docs).
+This is an experimental book/website for documentation and guidance relating to
+the UKFSR. The source is [here](https://github.com/FoodchainStats/ukfsr-docs).
 
 ## What is this and how do I use it?
 
-The plan is to capture everything related to UKFSR2024 production based on lessons from UKFSR2021 which might be useful, and end up with a repository to pick up again once UKFSR2027 is being planned.
+The plan is to capture everything related to UKFSR2024 production based on
+lessons from UKFSR2021 which might be useful, and end up with a repository to
+pick up again once UKFSR2027 is being planned.
 
-We aim for a logical structure, but there may be some nuggets dropped in unusual places. Its a brain dump!
+We aim for a logical structure, but there may be some nuggets dropped in unusual
+places. Its a brain dump!
 
-We are working in the open, so this is not a Defra Sharepoint repository but a public Github one. We know that this means its not quite so accessible for policy professionals, but we will work on this. We are allowed to have internal conversations. We don't put anything in here that we are not prepared to make public - its for future teams, to make sure we've captured all the useful info to make their lives easier. If there are sensitive messages/lessons, we store them somewhere else.
+We are working in the open, so this is not a Defra Sharepoint repository but a
+public Github one. We know that this means its not quite so accessible for
+policy professionals, but we will work on this. We are allowed to have internal
+conversations. We don't put anything in here that we are not prepared to make
+public - its for future teams, to make sure we've captured all the useful info
+to make their lives easier. If there are sensitive messages/lessons, we store
+them somewhere else.
 
-This approach mirrors our approach to data and the production process: we are storing the relevant code we use to wrangle data and produce graphics in a similar repository. Data that is not open will of course not be shared.
+This approach mirrors our approach to data and the production process: we are
+storing the relevant code we use to wrangle data and produce graphics in a
+similar repository. Data that is not open will of course not be shared.
 
-Being as open and reproducible as we can is one of the current ambitions for official statistics production. This site is part of our way of trying to meet that ambition. That does not mean we will not make necessary internal decisions as needed - those will be recorded appropriately and documented safely elsewhere. 
+Being as open and reproducible as we can is one of the current ambitions for
+official statistics production. This site is part of our way of trying to meet
+that ambition. That does not mean we will not make necessary internal decisions
+as needed - those will be recorded appropriately and documented safely
+elsewhere.
 
 ## UKFSR Infrastructure
 
-The UKFSR is more than just a single document. It has a number of components as part of its underlying infrastructure:
+The UKFSR is more than just a single document. It has a number of components as
+part of its underlying infrastructure:
 
 - The text content (probably drafted and hosted on Sharepoint during production)
 - The underlying data and graphics content, hosted on an Amazon S3 bucket
+- The `ukfsr` R package containing miscellanous helper functions
 - The code to produce the graphics, hosted on Github
 - The code to produce the graphics data for preview, in csv format
 - This documentation
 
-All of this content is combined to produce two key outputs:
+All of this content is combined to produce *two* key outputs:
 
-- the report on gov.uk (this is the UKFSR to all intents and purposes for the public)
-- the physical printed edition laid in the HoC Library
+- the report on [gov.uk](https://www.gov.uk/government/collections/united-kingdom-food-security-report) (this is the UKFSR to all intents and purposes for the public)
+- the physical printed edition laid in the HoC Library (important, but a limited print run and inaccessible to all except MPs)
+
+In addition, there may be other published outputs, such as condensed reports,
+technical annexes etc, depending on individual feedback.
+
+## Timings, resources and pinch points
+
+The project plan is outside of the scope of this guide. However it is worth
+noting some salient features of the process.
+
+- **Data cutoff:** With a diverse set of data sources and a wide ranging release calendar, it may not be possible to match the drafting process to the release of the latest data. In some cases content can be drafted with the data available at the time and updated once the latest is published. This will apply most to annual releases. In others, for example inflation, data is more frequent. In all cases, essentially a decision has to be taken on the point at which no new data will be included, and the text finalised to cover the latest data at that point.
+
+- **Content lock:** It may be an obvious point, but there needs to be a point at which the content is set and no further amendments can be made, to allow the publishing process to start. It may be a naive hope, but this needs time. And locking content means finalising SoS input etc. Web publishing is a specialist role, and there are a limited number of people who can set publications up on Whitehall Publisher. **This is a pinch point with little remediation**.
+
+

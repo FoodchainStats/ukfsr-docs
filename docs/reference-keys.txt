@@ -23,12 +23,12 @@ chart-context
 resolutionformat
 helpers
 data
+format
 storage
 access
 structure
 file-naming-convention
 code
-format
 theme-guides
 theme-1
 theme-2
@@ -56,3 +56,4 @@ late-laying-of-the-report
 environmental-principles-policy
 general-considerations
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
+timings-resources-and-pinch-points

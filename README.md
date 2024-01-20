@@ -1,6 +1,6 @@
 UKFSR Guidance
 
-Experimental site for guidance on all things to do with producing the report.
+Experimental site for guidance on all things to do with producing the report. Site home is [https://foodchainstats.github.io/ukfsr-docs/](https://foodchainstats.github.io/ukfsr-docs/)
 
 update with
 

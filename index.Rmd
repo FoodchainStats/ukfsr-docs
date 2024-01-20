@@ -17,8 +17,13 @@ github-repo: FoodchainStats/ukfsr-docs
 
 # About
 
-This is an experimental book/website for documentation and guidance relating to
-the UKFSR. The source is [here](https://github.com/FoodchainStats/ukfsr-docs).
+This is an experimental site for documentation and guidance relating to
+producing the UKFSR. Its intended audience is mainly the production team,
+present and future. The source is
+[here](https://github.com/FoodchainStats/ukfsr-docs). Got suggestions for things
+to add/change? Go [here](https://github.com/FoodchainStats/ukfsr-docs/issues),
+open a new issue and submit your comments.
+
 
 ## What is this and how do I use it?
 
@@ -26,16 +31,22 @@ The plan is to capture everything related to UKFSR2024 production based on
 lessons from UKFSR2021 which might be useful, and end up with a repository to
 pick up again once UKFSR2027 is being planned.
 
-We aim for a logical structure, but there may be some nuggets dropped in unusual
-places. Its a brain dump!
+The guidance covers the mechanics of preparing text and graphical content,
+preparing for print, organisation of data and files, etc. Editorial decisions
+about content to inclide are out of scope. We aim for a logical structure, but
+there may be some nuggets dropped in unusual places. At the moment its a brain
+dump!
 
-We are working in the open, so this is not a Defra Sharepoint repository but a
-public Github one. We know that this means its not quite so accessible for
-policy professionals, but we will work on this. We are allowed to have internal
-conversations. We don't put anything in here that we are not prepared to make
-public - its for future teams, to make sure we've captured all the useful info
-to make their lives easier. If there are sensitive messages/lessons, we store
-them somewhere else.
+**Rationale**
+
+We are working in the open as much as we can, so this is not a Defra Sharepoint
+repository but a public Github one. We know that this means its not quite so
+accessible for policy professionals to edit, but we will work on this. Working
+in the open doesn't mean that we are not allowed to have internal conversations.
+We don't put anything in here that we are not prepared to make public - its for
+future teams, to make sure we've captured all the useful info to make their
+lives easier. If there are sensitive messages/lessons, we store them somewhere
+else.
 
 This approach mirrors our approach to data and the production process: we are
 storing the relevant code we use to wrangle data and produce graphics in a
@@ -45,7 +56,8 @@ Being as open and reproducible as we can is one of the current ambitions for
 official statistics production. This site is part of our way of trying to meet
 that ambition. That does not mean we will not make necessary internal decisions
 as needed - those will be recorded appropriately and documented safely
-elsewhere.
+for future reference elsewhere.
+
 
 ## UKFSR Infrastructure
 
@@ -54,9 +66,8 @@ part of its underlying infrastructure:
 
 - The text content (probably drafted and hosted on Sharepoint during production)
 - The underlying data and graphics content, hosted on an Amazon S3 bucket
-- The `ukfsr` R package containing miscellanous helper functions
-- The code to produce the graphics, hosted on Github
-- The code to produce the graphics data for preview, in csv format
+- The [code](https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024) to produce the graphics and data for preview
+- The [`ukfsr`](https://github.com/FoodchainStats/ukfsr) R package containing miscellanous helper functions
 - This documentation
 
 All of this content is combined to produce *two* key outputs:
@@ -66,6 +77,7 @@ All of this content is combined to produce *two* key outputs:
 
 In addition, there may be other published outputs, such as condensed reports,
 technical annexes etc, depending on individual feedback.
+
 
 ## Timings, resources and pinch points
 

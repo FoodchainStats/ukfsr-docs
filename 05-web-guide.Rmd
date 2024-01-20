@@ -4,15 +4,16 @@
 
 The report is most likely drafted in Word, on a Sharepoint repository. This is
 the most effective way to create the content in a multiuser environment, but
-eventually this needs to be converted for publication on gov.uk. This process,
-as with preparing for the physical print (Section \@ref(print)) has a resource
-and time overhead.
+eventually the content needs to be converted for publication on gov.uk. This
+process, as with preparing for the physical print (Section \@ref(print)) has a
+resource and time overhead.
 
 **Factor in prep for web time! (ideally 1 week) and lock the text** 
 
-The text must be converted to 'Govspeak', a flavour of Markdown. Graphics must
-be saved as separate files and uploaded to the publishing system. CSV files of
-data must also be prepared.
+The text must be converted to
+[Govspeak](https://govspeak-preview.publishing.service.gov.uk/guide), a flavour
+of Markdown. Graphics must be saved as separate files and uploaded to the
+publishing system. CSV files of data must also be prepared.
 
 Web publishing for statistics is handled by a small number of people who are
 accredited to use Whitehall Publisher. We are fortunate to have two publishers
@@ -45,10 +46,14 @@ SVGs can be any size and do not need resizing before uploading.
 
 ## Other useful things
 
-### Acronym markdown
+### Acronym markdown {#acronyms-web}
 
-Add to end of file, each one on a newline
+Add to end of file, each one on a new line, using the format as per the example
+below. This will enable a feature of gov.uk which pops up the acronym definition
+on a tooltip whenever a user hovers their mouse over the text. See
+\@ref(acronyms-text) for guidance on acronyms in the text.
 
 ```
 *[UKFSR]: UK Food Security Report
+*[STEC O157]: Shiga toxin-producing E. coli O157
 ```

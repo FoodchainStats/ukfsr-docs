@@ -51,7 +51,7 @@ its 3 years befoer anyone will look at these again!
 
 **Content filename template**
 
-`TX_s_n_v_description.svg/png/csv`
+`TX_s_nv_description.svg/png/csv`
 
 where:
 

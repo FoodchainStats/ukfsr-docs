@@ -88,4 +88,3 @@ noting some salient features of the process.
 
 - **Content lock:** It may be an obvious point, but there needs to be a point at which the content is set and no further amendments can be made, to allow the publishing process to start. It may be a naive hope, but this needs time. And locking content means finalising SoS input etc. Web publishing is a specialist role, and there are a limited number of people who can set publications up on Whitehall Publisher. **This is a pinch point with little remediation**.
 
-

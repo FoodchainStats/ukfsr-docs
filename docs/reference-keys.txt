@@ -36,9 +36,10 @@ theme-4
 theme-5
 web
 overview
-logistics
-converting-word-documents-to-markdown
 graphics
+converting-word-documents-to-markdown
+logistics
+formatting
 other-useful-things
 acronyms-web
 print

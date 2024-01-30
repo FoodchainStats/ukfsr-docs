@@ -80,7 +80,7 @@
 
 \title{UK Food Security Report Guidance}
 \author{Food Statistics Team}
-\date{Last updated: 2023-12-21}
+\date{Last updated: 30 January 2024, 14:31 pm}
 
 \begin{document}
 \maketitle
@@ -92,47 +92,110 @@
 \hypertarget{about}{%
 \chapter{About}\label{about}}
 
-This is an experimental book/website for documentation and guidance relating to the UKFSR. The source is \href{https://github.com/FoodchainStats/ukfsr-docs}{here}.
+This is an experimental site for documentation and guidance relating to
+producing the UKFSR. Its intended audience is mainly the production team,
+present and future. The source is
+\href{https://github.com/FoodchainStats/ukfsr-docs}{here}. Got suggestions for things
+to add/change? Go \href{https://github.com/FoodchainStats/ukfsr-docs/issues}{here},
+open a new issue and submit your comments.
 
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
+\hypertarget{what-is-this-and-how-do-i-use-it}{%
+\section{What is this and how do I use it?}\label{what-is-this-and-how-do-i-use-it}}
 
-The plan is to capture everything related to UKFSR2024 production based on lessons from UKFSR2021 which might be useful, and end up with a repository to pick up again once UKFSR2027 is being planned.
+The plan is to capture everything related to UKFSR2024 production based on
+lessons from UKFSR2021 which might be useful, and end up with a repository to
+pick up again once UKFSR2027 is being planned.
 
-We aim for a logical structure, but there may be some nuggets dropped in unusual places. Its a brain dump!
+The guidance covers the mechanics of preparing text and graphical content,
+preparing for print, organisation of data and files, etc. Editorial decisions
+about content to inclide are out of scope. We aim for a logical structure, but
+there may be some nuggets dropped in unusual places. At the moment its a brain
+dump!
 
-We are working in the open, so this is not a Defra Sharepoint repository but a public Github one. We know that this means its not quite so accessible for policy professionals, but we will work on this. We are allowed to have internal conversations. We don't put anything in here that we are not prepared to make public - its for future teams, to make sure we've captured all the useful info to make their lives easier. If there are sensitive messages/lessons, we store them somewhere else.
+\textbf{Rationale}
 
-This approach mirrors our approach to data and the production process: we are storing the relevant code we use to wrangle data and produce graphics in a similar repository. Data that is not open will of course not be shared.
+We are working in the open as much as we can, so this is not a Defra Sharepoint
+repository but a public Github one. We know that this means its not quite so
+accessible for policy professionals to edit, but we will work on this. Working
+in the open doesn't mean that we are not allowed to have internal conversations.
+We don't put anything in here that we are not prepared to make public - its for
+future teams, to make sure we've captured all the useful info to make their
+lives easier. If there are sensitive messages/lessons, we store them somewhere
+else.
 
-Being as open and reproducible as we can is one of the current ambitions for official statistics production. This site is part of our way of trying to meet that ambition. That does not mean we will not make necessary internal decisions as needed - those will be recorded appropriately and documented safely elsewhere.
+This approach mirrors our approach to data and the production process: we are
+storing the relevant code we use to wrangle data and produce graphics in a
+similar repository. Data that is not open will of course not be shared.
 
-\hypertarget{text}{%
-\chapter{Text style guide}\label{text}}
+Being as open and reproducible as we can is one of the current ambitions for
+official statistics production. This site is part of our way of trying to meet
+that ambition. That does not mean we will not make necessary internal decisions
+as needed - those will be recorded appropriately and documented safely
+for future reference elsewhere.
 
-For chart design guidance, see Section \ref{chart}.
+\hypertarget{ukfsr-infrastructure}{%
+\section{UKFSR Infrastructure}\label{ukfsr-infrastructure}}
 
-\hypertarget{gov.uk-style-guide}{%
-\section{GOV.UK style guide}\label{gov.uk-style-guide}}
-
-Guidance for all content published on gov.uk is available \href{https://www.gov.uk/guidance/style-guide}{here}
-
-\hypertarget{formatting}{%
-\section{Formatting}\label{formatting}}
+The UKFSR is more than just a single document. It has a number of components as
+part of its underlying infrastructure:
 
 \begin{itemize}
 \tightlist
 \item
-  use appropriate styles, particularly for headings. These needed when building the master publications
+  The text content (probably drafted and hosted on Sharepoint during production)
+\item
+  The underlying data and graphics content, hosted on an Amazon S3 bucket
+\item
+  The \href{https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024}{code} to produce the graphics and data for preview
+\item
+  The \href{https://github.com/FoodchainStats/ukfsr}{\texttt{ukfsr}} R package containing miscellanous helper functions
+\item
+  This documentation
 \end{itemize}
 
-\hypertarget{ukfsr-specific-guidance}{%
-\section{UKFSR specific guidance}\label{ukfsr-specific-guidance}}
+All of this content is combined to produce \emph{two} key outputs:
 
-Some of this may replicate the GDS advice.
+\begin{itemize}
+\tightlist
+\item
+  the report on \href{https://www.gov.uk/government/collections/united-kingdom-food-security-report}{gov.uk} (this is the UKFSR to all intents and purposes for the public)
+\item
+  the physical printed edition laid in the HoC Library (important, but a limited print run and inaccessible to all except MPs)
+\end{itemize}
+
+In addition, there may be other published outputs, such as condensed reports,
+technical annexes etc, depending on individual feedback.
+
+\hypertarget{timings-resources-and-pinch-points}{%
+\section{Timings, resources and pinch points}\label{timings-resources-and-pinch-points}}
+
+The project plan is outside of the scope of this guide. However it is worth
+noting some salient features of the process.
+
+\begin{itemize}
+\item
+  \textbf{Data cutoff:} With a diverse set of data sources and a wide ranging release calendar, it may not be possible to match the drafting process to the release of the latest data. In some cases content can be drafted with the data available at the time and updated once the latest is published. This will apply most to annual releases. In others, for example inflation, data is more frequent. In all cases, essentially a decision has to be taken on the point at which no new data will be included, and the text finalised to cover the latest data at that point.
+\item
+  \textbf{Content lock:} It may be an obvious point, but there needs to be a point at which the content is set and no further amendments can be made, to allow the publishing process to start. It may be a naive hope, but this needs time. And locking content means finalising SoS input etc. Web publishing is a specialist role, and there are a limited number of people who can set publications up on Whitehall Publisher. \textbf{This is a pinch point with little remediation}.
+\end{itemize}
+
+\hypertarget{text}{%
+\chapter{Text style guide}\label{text}}
+
+For chart design guidance, see Section \ref{chart}. There is a GDS style guide
+for all content published on gov.uk is available
+\href{https://www.gov.uk/guidance/style-guide}{here}. The UKFSR guide is intended to
+complement this.
+
+\hypertarget{formatting-styles}{%
+\section{Formatting styles}\label{formatting-styles}}
+
+Use appropriate styles in Word, particularly for \emph{headings}. Heading styles are critical to the structure of the web publications (see \ref{web}), and building the table of contents in the print version (see \ref{print}). If you dont use styles during drafting, its massive horrible job to retrofit them at the end when time is short.
+
+\textbf{Note there is no need to worry about the specifics of formatting and the look of the text during drafting, in terms of font, colour, spacing etc. Concentrate on the content. Stick to marking text attributes such as heading level, bold, italic, bulleted list etc. The Defra publication template and web publishing process will deal with the look of the finished product.}
 
 \hypertarget{spellingword-choice}{%
-\subsection{Spelling/Word choice}\label{spellingword-choice}}
+\section{Spelling/Word choice}\label{spellingword-choice}}
 
 \begin{itemize}
 \item
@@ -204,10 +267,51 @@ Some of this may replicate the GDS advice.
   \end{itemize}
 \end{itemize}
 
-\hypertarget{references}{%
-\subsection{References}\label{references}}
+\hypertarget{sentence-length}{%
+\section{Sentence length}\label{sentence-length}}
 
-Include a reference in-text after the relevant sentence/paragraph. References should follow the style guide. When writing a reference:
+\begin{itemize}
+\tightlist
+\item
+  Do not use long sentences. Check sentences with more than 25 words to see if you can split them to make them clearer.
+\end{itemize}
+
+\hypertarget{urls}{%
+\section{URLs/Links}\label{urls}}
+
+See \ref{refs} for references to academic reports. \emph{Link to sources, data and
+relevant online material liberally}, and when in doubt, link! Remember that this
+is not necessarily relevant to the print edition but fundamental to the online
+version. Todays readers expect to be able to click through to verify or explore
+further the data and other sources we refer to. It is fundamental to the
+credibility of the report.
+
+Alongside from the principle of `link liberally', is the principle of `link
+sensibly'. This simply means point to the place where a user might generally
+expect to go when they click. This might be a specific document/report, a
+summary page containing relevant content, or even the home page for an
+organisation. Use your judgement and put yourself in the position of an end
+user. Some examples:
+
+\begin{itemize}
+\item
+  \textbf{Data links:} Every chart must have a csv preview link. See Section \ref{data} for
+  guidance on that. In addition all sources must be linked to. Curious users might
+  want to explore the raw data sources beyond our curated csvs if they are happy
+  to do so. Either way they should have a link to the owner/producers of the data
+  so we need to add links to unedited sources. Which leads on to\ldots{}
+\item
+  \textbf{Collection pages:} Most statistics and regular gov.uk publications have a `collection page' which is a place to collate current and previous versions. Consider the difference between the \href{https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/previousReleases}{CPI collection page} which always shows the catalogue of recent publications, and an individual \href{https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/september2023}{release}. Generally the collection page is more future proof for users, unless you are making a reference to a specific edition in the UKFSR. The UKFSR has its own \href{https://www.gov.uk/government/collections/united-kingdom-food-security-report}{collection page}, although at the time of writing it only contains the UKFSR 2021 - eventually this will become an archive and repository of the most recent analysis.
+\item
+  \textbf{General links:} If there is no logical place to go, link to the organisation home page or somewhere else sensible, eg \href{https://www.uktradeinfo.com/trade-data/ots-custom-table/}{uktradeinfo}. Keep in mind that these links need to be relevant for at least three years - in 2027 will they still take people to places that are useful? Its OK to link to time sensitive material such as dated news reports but consider whether links are persistent and will not become stale.
+\end{itemize}
+
+\hypertarget{refs}{%
+\section{References}\label{refs}}
+
+See \ref{urls} for general linking guidance. Include a reference in-text after
+the relevant sentence/paragraph. References should follow the style guide. When
+writing a reference:
 
 \begin{itemize}
 \tightlist
@@ -225,7 +329,8 @@ Include a reference in-text after the relevant sentence/paragraph. References sh
 
 \emph{References can also be included as footnotes, particularly where too long or unwieldy for convenience in text.}
 
-If the reference is available online, make the title a link and include the date you accessed the online version. For example:
+If the reference is available online, make the title a link and include the date
+you accessed the online version. For example:
 
 \begin{itemize}
 \item
@@ -236,20 +341,18 @@ If the reference is available online, make the title a link and include the date
   Example given on gov.uk: Corallo AN and others. \href{https://www.sciencedirect.com/journal/health-policy}{`A systematic review of medical practice variation in OECD countries'} Health Policy 2014: volume 114, pages 5 to 14.
 \end{itemize}
 
-\hypertarget{general}{%
-\subsection{General}\label{general}}
-
-\hypertarget{acronyms}{%
-\subsubsection{Acronyms}\label{acronyms}}
+\hypertarget{acronyms-text}{%
+\section{Acronyms}\label{acronyms-text}}
 
 \begin{itemize}
-\tightlist
 \item
   Write out acronym for the first time in each theme, put abbreviation in brackets, then use abbreviation going forwards. This means acronyms should be re-introduced anew between the introduction and themes.
+\item
+  Note that for web publishing, acronyms need a little more work (see \ref{acronyms-web}). \textbf{Its a good idea to maintain a master list of all acronyms and their full descriptions} - it will help speed up the publishing preparation.
 \end{itemize}
 
 \hypertarget{labelling-data}{%
-\subsubsection{Labelling data}\label{labelling-data}}
+\section{Labelling data}\label{labelling-data}}
 
 \begin{itemize}
 \tightlist
@@ -257,8 +360,8 @@ If the reference is available online, make the title a link and include the date
   Each data set (table, bar chart, etc.) should be labelled as `Figure' with the corresponding indicator number and a letter. For instance, for data in theme 1, this could look like `Figure 1.1.2a', Figure `1.1.2b', etc.
 \end{itemize}
 
-\hypertarget{headings}{%
-\subsubsection{Headings}\label{headings}}
+\hypertarget{indicator-section-headings}{%
+\section{Indicator section headings}\label{indicator-section-headings}}
 
 Each indicator should have the following headings (check for consistent spelling):
 
@@ -308,7 +411,7 @@ Each indicator should have the following headings (check for consistent spelling
 \end{itemize}
 
 \hypertarget{the-voice}{%
-\subsubsection{The `Voice'}\label{the-voice}}
+\section{The `Voice'}\label{the-voice}}
 
 \begin{itemize}
 \tightlist
@@ -317,7 +420,7 @@ Each indicator should have the following headings (check for consistent spelling
 \end{itemize}
 
 \hypertarget{e.g.-i.e.-etc.}{%
-\subsubsection{e.g.~/ i.e.~/ etc.}\label{e.g.-i.e.-etc.}}
+\section{e.g.~/ i.e.~/ etc.}\label{e.g.-i.e.-etc.}}
 
 \begin{itemize}
 \tightlist
@@ -330,7 +433,7 @@ Each indicator should have the following headings (check for consistent spelling
 \end{itemize}
 
 \hypertarget{symbols}{%
-\subsubsection{Symbols}\label{symbols}}
+\section{Symbols}\label{symbols}}
 
 \begin{itemize}
 \tightlist
@@ -343,7 +446,7 @@ Each indicator should have the following headings (check for consistent spelling
 \end{itemize}
 
 \hypertarget{numbers}{%
-\subsubsection{Numbers}\label{numbers}}
+\section{Numbers}\label{numbers}}
 
 \begin{itemize}
 \tightlist
@@ -356,7 +459,7 @@ Each indicator should have the following headings (check for consistent spelling
 \end{itemize}
 
 \hypertarget{quotation-marks}{%
-\subsubsection{Quotation marks:}\label{quotation-marks}}
+\section{Quotation marks:}\label{quotation-marks}}
 
 Use single quotes
 
@@ -380,31 +483,150 @@ Use double quotes:
   Use double quotes in body text for direct quotations
 \end{itemize}
 
-\hypertarget{sentence-length}{%
-\subsubsection{Sentence length}\label{sentence-length}}
-
-\begin{itemize}
-\tightlist
-\item
-  Do not use long sentences. Check sentences with more than 25 words to see if you can split them to make them clearer.
-\end{itemize}
-
 \hypertarget{chart}{%
 \chapter{Chart Style Guide}\label{chart}}
 
 This section will cover guidance on chart design and themes. For the text
-styleguide, see Chapter \ref{text}. There is general guidance on chart design
+styleguide, see Section \ref{text}. There is general guidance on chart design
 produced by the \href{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/}{Analysis Function}.
+
+\textbf{Please refer to Section \ref{data} on preparing data for charting and publication as preview csv data.}
 
 \hypertarget{colours}{%
 \section{Colours}\label{colours}}
 
 The UKFSR uses the Analysis Function palette as recommended \href{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/}{here}. There is an R package, \texttt{afcolours} available on CRAN, which helps with implementing the \href{https://best-practice-and-impact.github.io/afcolours/}{palette}.
 
-\hypertarget{data-guide}{%
-\chapter{Data guide}\label{data-guide}}
+There are a maximum of 6 colours available in the palette for categorical
+variables. This means that an individual chart may not have more than 6 series.
+
+\hypertarget{chart-context}{%
+\section{Chart context}\label{chart-context}}
+
+Eache chart is accompanied by some additional features:
+
+\begin{itemize}
+\tightlist
+\item
+  CSV: the csv of the chart data is required for a preview/download link
+\item
+  URL to source: the default is a kink to collection pages wherever possible.
+\end{itemize}
+
+\hypertarget{resolutionformat}{%
+\section{Resolution/format}\label{resolutionformat}}
+
+SVG/PNG
+
+\hypertarget{helpers}{%
+\section{Helpers}\label{helpers}}
+
+We need a \texttt{theme\_fsr} theme for chart styleing. Defaults like linewidth = 1.5
+for series need to be specified. We could have an fsr package a la ggfbs but is
+it sensible?
+
+\hypertarget{data}{%
+\chapter{Data guide}\label{data}}
 
 How we prepare and organise data.
+
+\hypertarget{format}{%
+\section{Format}\label{format}}
+
+The data underlying each chart needs to be stored in csv format. This is so we
+can offer a preview link for the data alongside each chart.
+
+\textbf{GDS Transport font!!}
+
+\hypertarget{storage}{%
+\section{Storage}\label{storage}}
+
+Raw data is stored in the Amazon S3 bucket \texttt{s3-ranch-054}. Storage is certified
+for sensitive data (although most data should be public domain).
+
+\hypertarget{access}{%
+\subsection{Access}\label{access}}
+
+The bucket is accessible from across Defra (?)
+
+\begin{verbatim}
+library(aws.s3)
+
+contents <- get_bucket_df("s3-ranch-054")
+
+x <- aws.s3::s3read_using(FUN = readr::read_csv,
+                                      bucket = "s3-ranch-054",
+                                      object = "example.csv")
+\end{verbatim}
+
+\hypertarget{structure}{%
+\subsection{Structure}\label{structure}}
+
+Here is the current suggested structure for the S3 bucket folders:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0789}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0789}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0789}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0877}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6754}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Level 1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Level 2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Level 3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Level 4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Comments
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+theme\_X & & & & Top level \\
+& TX\_s\_n & & & Indicator section and number (include description?) \\
+& & data & & Raw data in any form can be stored here. \\
+& & output & graphics & Contains png and svg final graphic files \\
+& & & csv & Contains final csv required to reproduce the graphics in R. In tidy format. \\
+& & misc & & Optional folder to store random files, eg map shapefiles. \\
+\end{longtable}
+
+\hypertarget{file-naming-convention}{%
+\subsection{File naming convention}\label{file-naming-convention}}
+
+UKFSR content files must adhere to a naming convention. Supplementary files such
+as raw data etc can be more fluid, although we recommend includint theme/
+indicator numbers. If in doubt, err on the side of long descriptive file names -
+its 3 years befoer anyone will look at these again!
+
+\textbf{Content filename template}
+
+\texttt{TX\_s\_nv\_description.svg/png/csv}
+
+where:
+
+\begin{itemize}
+\item
+  \texttt{X} is theme number
+\item
+  \texttt{s} is section number
+\item
+  \texttt{n} is indicator number
+\item
+  \texttt{v} is indicator variant, eg a,b,c, etc
+\item
+  \texttt{description} needs to be enough to uniquely describe the content. Use \emph{snake\_case} as necessary.
+\item
+  \textbf{filetype} must be \texttt{csv} for data, \texttt{svg}/\texttt{png} for web/print respectively
+\end{itemize}
+
+\hypertarget{code}{%
+\subsection{Code}\label{code}}
+
+The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at \url{https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024}. It is crucial that the content code for graphics and related output is captured here.
 
 \hypertarget{theme-guides}{%
 \chapter{Theme guides}\label{theme-guides}}
@@ -424,19 +646,42 @@ How we prepare and organise data.
 \hypertarget{theme-5}{%
 \section{Theme 5}\label{theme-5}}
 
-\hypertarget{web-publishing-guidance}{%
-\chapter{Web publishing guidance}\label{web-publishing-guidance}}
+\hypertarget{web}{%
+\chapter{Web publishing guidance}\label{web}}
 
-\hypertarget{logistics}{%
-\section{Logistics}\label{logistics}}
+TEST
 
-Web publishing for statistics is handled by a small number of people who are accredited to use whitehall Publisher. We are fortunate to have two publishers in the food team. But there is an overhead. \textbf{Factor in prep for web time! (ideally 1 week)}
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+The report is most likely drafted in Word, on a Sharepoint repository. This is
+the most effective way to create the content in a multiuser environment, but
+eventually the content needs to be converted for publication on gov.uk. This
+process, as with preparing for the physical print (Section \ref{print}) has a
+resource and time overhead.
+
+\textbf{Factor in prep for web time! (ideally 1 week) and lock the text}
+
+The text must be converted to
+\href{https://govspeak-preview.publishing.service.gov.uk/guide}{Govspeak}, a flavour
+of Markdown. Graphics must be saved as separate files and uploaded to the
+publishing system. CSV files of data must also be prepared.
+
+Web publishing for statistics is handled by a small number of people who are
+accredited to use Whitehall Publisher. We are fortunate to have two publishers
+in the food team. But there is an overhead.
 
 \begin{itemize}
 \tightlist
 \item
-  web team to commandeer additional resource to cover secondeyes etc process during web print conversion
+  web team to commandeer additional resource to cover second-eyes etc process during web print conversion
 \end{itemize}
+
+\hypertarget{graphics}{%
+\section{Graphics}\label{graphics}}
+
+PNG images must be 960 pixels wide by 640 pixels high at 72 dpi.
+SVGs can be any size and do not need resizing before uploading.
 
 \hypertarget{converting-word-documents-to-markdown}{%
 \section{Converting Word documents to markdown}\label{converting-word-documents-to-markdown}}
@@ -453,30 +698,152 @@ pandoc_convert(input = 'FILENAME.docx',
                            "--extract-media=./images/"))
 \end{verbatim}
 
-\hypertarget{graphics}{%
-\section{Graphics}\label{graphics}}
+this process will extract the PNG graphics from each Word document and place them in a separately created /images folder as .png files, leaving behind just the graphic title in the text, e.g.~\#\#\#\# Figure X.XX. YYYY (now formatted in Markdown by the conversion process).
 
-Images must be 960 pixels wide by 640 pixels high at 72 dpi.
-SVGs can be any size and do not need resizing before uploading.
+\hypertarget{logistics}{%
+\section{Logistics}\label{logistics}}
+
+This should ideally be executed by the analytical lead for each theme:
+
+Once the Word documents have been converted to a .md Markdown text format, the user should firstly check that all Word formatting (headings, etc.) has fed through correctly by highlighting text in the text file and pasting into the box within the \href{https://govspeak-preview.publishing.service.gov.uk/}{Govspeak converter and preview page} and viewing the output on the page.
+
+Graphics handling: after Word document conversion, directly below the graphic title, add a descriptor (within square brackets) which should contain the graphic filename (with the correct nomenclature) with the inclusion now of the `.svg' suffix for replacement of the PNG files with their SVG equivalents, i.e.
+
+{[}Image: XX.svg{]}
+
+leaving a blank line before and after. The SVG files will have been generated using the relevant R code by each analyst. Adoption of this procedure will then correctly synchronise the eventually uploaded, finalised, .md Markdown files with the Whitehall publishing system, the publisher landing page for the report automatically displaying all graphics on the page after the bulk upload of all SVG files performed by the onduty publisher. The publisher will then insert the `XX.svg' SVG filenames manually underneath each graphic on the publisher landing page.
+
+Check each graphic has an appropriate line about accessibility (i.e.~the so-called `alt-text') directly below each graphic title and its data source and before the links for viewing and downloading pertinent CSV file data, e.g.~\textbf{Figure XX.X description:} `Figure XX.X is a line chart that shows the amount of consumer spending in the UK on food and non-alcoholic drink, alcoholic drink (off-licence only) and for catering from 2002 to 2022'. In essence this sentence is an expansion (if necessary) of the graphic title itself.
+
+CSV files: the current standard GOV.UK nomenclature for viewing/downloadng associated data CSV files is, for the data preview, e.g.~
+
+\begin{verbatim}
+https://assets.publishing.service.gov.uk/media/64beb60bd4051a00145a9201/foodchainanalysis-productivity-dataset_27jul2023i.csv/preview
+\end{verbatim}
+
+and for the data download, e.g.
+
+\begin{verbatim}
+https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/1173363/foodchainanalysis-productivity-dataset_27jul2023i.csv
+\end{verbatim}
+
+it will be good practice to have placeholders for these two urls placed directly underneath the accessibility text, as the onduty publisher will have to insert the unique `nodes' for each graphic in the last step before submitting the report for 2i approval. Suggested format for this:
+
+\begin{verbatim}
+[View the data for this chart](https://assets.publishing.service.gov.uk/media/NODE/XXX_PUBLICATION DATA.csv/preview)  
+
+[Download the data for this chart](https://assets.publishing.service.gov.uk/media/NODE/XXX_PUBLICATION DATA.csv)
+\end{verbatim}
+
+\hypertarget{formatting}{%
+\section{Formatting}\label{formatting}}
+
+\begin{itemize}
+\item
+  To add external links to GOV.UK pages, use square brackets {[}{]} around the link text and round brackets () around the link URL, i.e.~\texttt{{[}LINK\ TEXT{]}(url)}. Make sure there are no spaces between the brackets or the link will not work. When linking to any Whitehall content, use the Whitehall publisher link and not the website URL. The first part of the URL \texttt{https://whitehall-admin.publishing.service.gov.uk/} should be used along with the relative path, for example: /government/admin/publications/123456 (i.e.~use relative links).
+\item
+  For internal document links, i.e.~for providing Markdown links to particular section headings in a publication page (known as `anchor' links, which although, by definition, present accessibility issues, in a report of this complexity are unavoidable), in order to link to a particular section, e.g.~`SECTION NAME', the following should be added to the text file, including a `stub name' that uniquely identifies a particular section:
+\end{itemize}
+
+\begin{verbatim}
+**[SECTION NAME](#STUBNAME)** 
+\end{verbatim}
+
+(this will appear in bold font as the clickable `SECTION NAME' in the publication webpage text; the corresponding url being: \texttt{https://www.gov.uk/......\#STUBNAME}). Clicking the link will take the reader to the part of the webpage signified in the text file by:
+
+\begin{verbatim}
+### SECTION NAME
+{:#STUBNAME}
+<br/>
+<br/>
+\end{verbatim}
+
+i.e.~\{:\#STUBNAME\} has to go on a new line, this is then followed by two blank line \texttt{\textless{}br/\textgreater{}} HTML codes.
+\textbf{EXAMPLE:}
+In a text file: `as outlined further in {[}Indicator 1.2.2{]} (\#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2)' appears as `as outlined further in \texttt{{[}Indicator\ 1.2.2{]}(\#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2)}' in the webpage text. Clicking the link in the latter sends the reader to: `Indicator 1.2.2 Components of global food demand growth' section in the webpage, which is also indicated on the left hand side section menu window pane of the GOV.UK webpage. The relevant part of the text file should appear in the form:
+
+\begin{verbatim}
+## Indicator 1.2.2 Components of global food demand growth 
+{:#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2}
+<br/>
+<br/>
+\end{verbatim}
+
+It is also possible to have subsections referred to with the same stub name such that clicking the visible link takes the reader to the main section where they can find the relevant subsection below this, e.g.~to define the term `Gross Value Added' under the `Glossary' section heading in the `Total Factor Productivity of the United Kingdom Food Chain' publication page \href{https://www.gov.uk/government/statistics/food-chain-productivity/total-factor-productivity-of-the-united-kingdom-food-chain-2021-final-release}{Total Factor Productivity of the United Kingdom Food Chain}, the entry `In 2021, the value of {[}Gross Value Added{]} (\#tfp-glossary)' in the text file is observed on the webpage as \texttt{\textquotesingle{}In\ 2021,\ the\ value\ of\ **{[}Gross\ Value\ Added{]}(\#tfp-glossary)**}' such that `\#\#\# Gross Value Added (GVA)' appears as its own subsection heading within the glossary,
+
+\begin{verbatim}
+## Glossary
+{:#tfp-glossary} 
+.......
+.......
+.......
+### Gross Value Added (GVA)
+\end{verbatim}
+
+For linking to other themes/sections in the report GOV.UK landing page, it is just a case of adding the stub to the end of the url for the report landing page (in this case the name of the stub will be generated by the publishing system and the publishing team will have sight of this; the full url can then be added to the relevant text file before final submission in much the same way as adding CSV file details), e.g.
+
+switch to Theme 2 from Theme 1
+
+\begin{verbatim}
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-theme-2-uk-food-supply-sources
+\end{verbatim}
+
+switch to the Table of Contents
+
+\begin{verbatim}
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-contents
+\end{verbatim}
+
+switch to the Appendix
+
+\begin{verbatim}
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-appendix
+\end{verbatim}
+
+switch to the landing page
+
+\begin{verbatim}
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021
+\end{verbatim}
+
+Stub names can also be used with external links to other GOV.UK publications cited within the report. They can be formatted by adding `\#' and the stub name to the external url, with all words separated by hyphens. For example, to link to the section `Capacity management', use \texttt{https://www.gov.uk/government/publications/public-services-network-psn-service-management-good-practice/service-management-good-practice\#capacity-management}.
+
+\begin{itemize}
+\tightlist
+\item
+  For email links, use `less than' (\textless) and `greater than' (\textgreater) arrows around email addresses to create links, e.g.
+\end{itemize}
+
+\begin{verbatim}
+<example@example.com>
+\end{verbatim}
 
 \hypertarget{other-useful-things}{%
 \section{Other useful things}\label{other-useful-things}}
 
-\hypertarget{acronym-markdown}{%
-\subsection{Acronym markdown}\label{acronym-markdown}}
+\hypertarget{acronyms-web}{%
+\subsection{Acronym markdown}\label{acronyms-web}}
 
-Add to end of file, each one on a newline
+Add to end of file, each one on a new line, using the format as per the example
+below. This will enable a feature of gov.uk which pops up the acronym definition
+on a tooltip whenever a user hovers their mouse over the text. See
+\ref{acronyms-text} for guidance on acronyms in the text.
 
 \begin{verbatim}
 *[UKFSR]: UK Food Security Report
+*[STEC O157]: Shiga toxin-producing E. coli O157
 \end{verbatim}
 
-\hypertarget{physical-print-edition}{%
-\chapter{Physical print edition}\label{physical-print-edition}}
+\hypertarget{print}{%
+\chapter{Physical print edition}\label{print}}
 
-The logistics of print will depend on the service used to create the print edition. For UKFSR2021 the printers needed a PDF of the final document to turn into the final laid report.
+The logistics of print will depend on the service used to create the print
+edition. For UKFSR2021 the printers needed a PDF of the final document to turn
+into the final laid report.
 
-\textbf{Factor in print publication time! (ideally 1 week)}
+\textbf{Factor in print publication time! (ideally 1 week) and lock the text}
+
+Do not forget that preparing for web publishing (Section \ref{web}) is a separate and different process that also requires time and resources.
 
 \hypertarget{final-word-version}{%
 \section{Final Word version}\label{final-word-version}}
@@ -499,7 +866,7 @@ The assumption is that the final version will be contained in multiple Word file
   check other cover/back cover/inside cover text: last time there was specific wording like `laid before the HoC Library on \emph{date}' that needed to conform with protocol.
 \end{itemize}
 
-With this cover sheet insert the section docs as `subdocuments', in outline view. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. ONce all the content is in place, we can turn ro formatting for print:
+With this cover sheet insert the section docs as `subdocuments', in outline view. This allows the building of the master table of contents which covers the whole report. Insert the TOC and set up the Contents pages. Once all the content is in place, we can turn to formatting for print:
 
 \begin{itemize}
 \tightlist
@@ -509,6 +876,8 @@ With this cover sheet insert the section docs as `subdocuments', in outline view
   Page numbering: inside and outside so that they appear on the right and left hand side of the printed page. You need to set page numbers to inherit from each previous section so that they flow from 1-n and don't reset at the start of each child doc.
 \item
   Pagination: this was a bit of a fiddle last time. Make sure that the content is settled (You probably want to eyeball the content for any errors with heading levels etc and fix all content snags before doing this or else you'll have to do it again). Refresh the TOC, and then go through inserting white space where necessary to ensure page breaks don't occur in unfortunate places.
+\item
+  URLs: We dont need to worry about URLs working in a paper document, but in a PDF we might want clickable links. \emph{This is pretty irrelevant to the final HTML publication (remember: the HTML is the publication, not some paper document!)}. Focus on maximising hyperlinks in the we b publication.
 \end{itemize}
 
 At this point the document should be ready for PDF conversion.
@@ -540,18 +909,58 @@ There was an unfulfilled request for a large print version last time. With a bit
 
 \href{https://osr.statisticsauthority.gov.uk/correspondence/mark-pont-to-ian-lonsdale-united-kingdom-food-security-report/}{Here.}
 
+\hypertarget{general-legal-guidance-from-2024}{%
+\section{General legal guidance from 2024}\label{general-legal-guidance-from-2024}}
+
 \hypertarget{publication-deadline}{%
 \section{Publication deadline}\label{publication-deadline}}
 
-Insert legal guidance
+{[}from legal comments 11/01/2024{]}
 
-\hypertarget{general-legal-guidance-from-2024}{%
-\section{General legal guidance from 2024}\label{general-legal-guidance-from-2024}}
+The date you should lay the report is actually 3 years from the date of the last
+report so that would be the 15 December 2024 (although note that this is a
+Sunday so the last sitting day before this date would be appropriate). There is
+no reason not to publish before this date if needed and it would be advisable
+not to leave it to the last possible date. Section 19 of the Agriculture Act
+2020 states that \textbf{a new UKFSR is required ``at least once every three years''}. We
+think that the safest way to interpret this would be that each UKFSR laying
+starts a three-year `clock' by which another UKFSR must be published. As the
+first UKFSR was laid in Parliament on December 16 2021, the three-year clock
+means that the next must be laid by December 15 2024, but can be any time
+before. If UKFSR2 is instead laid on, for instance, September 1 2024, UKFSR3
+will have to be laid by August 31 2027.
+
+Also please note that although preferable, \textbf{Parliament does not absolutely have
+to be sitting for a paper to be laid.} This has previously been considered by
+policy and legal and whilst the UKFSR was published as an Act paper, if it must
+be published on a non-sitting day in order to avoid breaching statutory duties,
+Parliamentary Team consider that it could in exceptional circumstances be laid
+as a Command Paper with the full knowledge of the Journal Office and with the
+relevant changes made to its cover. This may not be necessary in future but for
+now it is advisable.
+
+\textbf{Further, the UKFSR is Official Statistics}, which require notice of publication
+at least four weeks before the intended publication date, and publication on
+that date. Once the date is pre-notified, any failure to publish on that date
+will invite scrutiny from the Office of Statistical Regulation. This does not
+touch on any of the other rules, but if coming out on the same day should take
+account of the time it takes to lay documents in Parliament, so the next UKFSR
+should probably commit to publish at noon or so rather than 0930.
 
 \hypertarget{late-laying-of-the-report}{%
 \subsection{Late laying of the report}\label{late-laying-of-the-report}}
 
-The starting point is that there is a clear statutory duty to lay the report by the last sitting day before Christmas day (s19(3) of the Agriculture Act 2020). Although the Act states ``In this section ``relevant day'' means the last day before 25 December 2021 which is a sitting day for both Houses of Parliament.'', I think we can safely assume that the last sitting day before 25 December 2024 is correct. If the report is laid later than this date there would be a breach of this statutory duty. The risk of a legal challenge being brought (our assessment is that there would be a low risk (less than 30\%)) would depend on the circumstances that caused the delay and the length of the delay. However, if it is brought the chances of successful challenge are medium-high (50-70\%) given that there is a clear statutory duty to publish by a certain date. We could perhaps mitigate this depending on the circumstances which would lower the risk. For example, the Courts would likely look more favourably on SoS if the reason for delay was an election. However, if you know there will be an election then steps should be taken to avoid delay as much as possible. In short, unavoidable circumstances would look more favourable to the Courts than avoidable ones.
+If the report is laid later than deadline date there would be a breach of this
+statutory duty. The risk of a legal challenge being brought (our assessment is
+that there would be a low risk (less than 30\%)) would depend on the
+circumstances that caused the delay and the length of the delay. However, if it
+is brought the chances of successful challenge are medium-high (50-70\%) given
+that there is a clear statutory duty to publish by a certain date. We could
+perhaps mitigate this depending on the circumstances which would lower the risk.
+For example, the Courts would likely look more favourably on SoS if the reason
+for delay was an election. However, if you know there will be an election then
+steps should be taken to avoid delay as much as possible. In short, unavoidable
+circumstances would look more favourable to the Courts than avoidable ones.
 
 \hypertarget{environmental-principles-policy}{%
 \subsection{Environmental principles policy}\label{environmental-principles-policy}}

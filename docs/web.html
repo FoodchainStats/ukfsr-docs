@@ -132,12 +132,13 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="6" data-path="web.html"><a href="web.html"><i class="fa fa-check"></i><b>6</b> Web publishing guidance</a>
 <ul>
 <li class="chapter" data-level="6.1" data-path="web.html"><a href="web.html#overview"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
-<li class="chapter" data-level="6.2" data-path="web.html"><a href="web.html#logistics"><i class="fa fa-check"></i><b>6.2</b> Logistics</a></li>
+<li class="chapter" data-level="6.2" data-path="web.html"><a href="web.html#graphics"><i class="fa fa-check"></i><b>6.2</b> Graphics</a></li>
 <li class="chapter" data-level="6.3" data-path="web.html"><a href="web.html#converting-word-documents-to-markdown"><i class="fa fa-check"></i><b>6.3</b> Converting Word documents to markdown</a></li>
-<li class="chapter" data-level="6.4" data-path="web.html"><a href="web.html#graphics"><i class="fa fa-check"></i><b>6.4</b> Graphics</a></li>
-<li class="chapter" data-level="6.5" data-path="web.html"><a href="web.html#other-useful-things"><i class="fa fa-check"></i><b>6.5</b> Other useful things</a>
+<li class="chapter" data-level="6.4" data-path="web.html"><a href="web.html#logistics"><i class="fa fa-check"></i><b>6.4</b> Logistics</a></li>
+<li class="chapter" data-level="6.5" data-path="web.html"><a href="web.html#formatting"><i class="fa fa-check"></i><b>6.5</b> Formatting</a></li>
+<li class="chapter" data-level="6.6" data-path="web.html"><a href="web.html#other-useful-things"><i class="fa fa-check"></i><b>6.6</b> Other useful things</a>
 <ul>
-<li class="chapter" data-level="6.5.1" data-path="web.html"><a href="web.html#acronyms-web"><i class="fa fa-check"></i><b>6.5.1</b> Acronym markdown</a></li>
+<li class="chapter" data-level="6.6.1" data-path="web.html"><a href="web.html#acronyms-web"><i class="fa fa-check"></i><b>6.6.1</b> Acronym markdown</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="print.html"><a href="print.html"><i class="fa fa-check"></i><b>7</b> Physical print edition</a>
@@ -181,6 +182,7 @@ built up from previous UKFSR production experiences.</p>" />
             <section class="normal" id="section-">
 <div id="web" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Section 6</span> Web publishing guidance<a href="web.html#web" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>TEST</p>
 <div id="overview" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Overview<a href="web.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The report is most likely drafted in Word, on a Sharepoint repository. This is
@@ -200,8 +202,10 @@ in the food team. But there is an overhead.</p>
 <li>web team to commandeer additional resource to cover second-eyes etc process during web print conversion</li>
 </ul>
 </div>
-<div id="logistics" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> Logistics<a href="web.html#logistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="graphics" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Graphics<a href="web.html#graphics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>PNG images must be 960 pixels wide by 640 pixels high at 72 dpi.
+SVGs can be any size and do not need resizing before uploading.</p>
 </div>
 <div id="converting-word-documents-to-markdown" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Converting Word documents to markdown<a href="web.html#converting-word-documents-to-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -214,16 +218,74 @@ pandoc_convert(input = &#39;FILENAME.docx&#39;,
                            &quot;--reference-links&quot;,
                            &quot;--extract-media=./images/&quot;))
 </code></pre>
+<p>this process will extract the PNG graphics from each Word document and place them in a separately created /images folder as .png files, leaving behind just the graphic title in the text, e.g. #### Figure X.XX. YYYY (now formatted in Markdown by the conversion process).</p>
 </div>
-<div id="graphics" class="section level2 hasAnchor" number="6.4">
-<h2><span class="header-section-number">6.4</span> Graphics<a href="web.html#graphics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Images must be 960 pixels wide by 640 pixels high at 72 dpi.
-SVGs can be any size and do not need resizing before uploading.</p>
+<div id="logistics" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Logistics<a href="web.html#logistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This should ideally be executed by the analytical lead for each theme:</p>
+<p>Once the Word documents have been converted to a .md Markdown text format, the user should firstly check that all Word formatting (headings, etc.) has fed through correctly by highlighting text in the text file and pasting into the box within the <a href="https://govspeak-preview.publishing.service.gov.uk/">Govspeak converter and preview page</a> and viewing the output on the page.</p>
+<p>Graphics handling: after Word document conversion, directly below the graphic title, add a descriptor (within square brackets) which should contain the graphic filename (with the correct nomenclature) with the inclusion now of the ‘.svg’ suffix for replacement of the PNG files with their SVG equivalents, i.e.</p>
+<p>[Image: XX.svg]</p>
+<p>leaving a blank line before and after. The SVG files will have been generated using the relevant R code by each analyst. Adoption of this procedure will then correctly synchronise the eventually uploaded, finalised, .md Markdown files with the Whitehall publishing system, the publisher landing page for the report automatically displaying all graphics on the page after the bulk upload of all SVG files performed by the onduty publisher. The publisher will then insert the ‘XX.svg’ SVG filenames manually underneath each graphic on the publisher landing page.</p>
+<p>Check each graphic has an appropriate line about accessibility (i.e. the so-called ‘alt-text’) directly below each graphic title and its data source and before the links for viewing and downloading pertinent CSV file data, e.g. <strong>Figure XX.X description:</strong> ‘Figure XX.X is a line chart that shows the amount of consumer spending in the UK on food and non-alcoholic drink, alcoholic drink (off-licence only) and for catering from 2002 to 2022’. In essence this sentence is an expansion (if necessary) of the graphic title itself.</p>
+<p>CSV files: the current standard GOV.UK nomenclature for viewing/downloadng associated data CSV files is, for the data preview, e.g. </p>
+<pre><code>https://assets.publishing.service.gov.uk/media/64beb60bd4051a00145a9201/foodchainanalysis-productivity-dataset_27jul2023i.csv/preview</code></pre>
+<p>and for the data download, e.g.</p>
+<pre><code>https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/1173363/foodchainanalysis-productivity-dataset_27jul2023i.csv</code></pre>
+<p>it will be good practice to have placeholders for these two urls placed directly underneath the accessibility text, as the onduty publisher will have to insert the unique ‘nodes’ for each graphic in the last step before submitting the report for 2i approval. Suggested format for this:</p>
+<pre><code>[View the data for this chart](https://assets.publishing.service.gov.uk/media/NODE/XXX_PUBLICATION DATA.csv/preview)  
+
+[Download the data for this chart](https://assets.publishing.service.gov.uk/media/NODE/XXX_PUBLICATION DATA.csv)</code></pre>
 </div>
-<div id="other-useful-things" class="section level2 hasAnchor" number="6.5">
-<h2><span class="header-section-number">6.5</span> Other useful things<a href="web.html#other-useful-things" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="acronyms-web" class="section level3 hasAnchor" number="6.5.1">
-<h3><span class="header-section-number">6.5.1</span> Acronym markdown<a href="web.html#acronyms-web" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="formatting" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Formatting<a href="web.html#formatting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>To add external links to GOV.UK pages, use square brackets [] around the link text and round brackets () around the link URL, i.e. <code>[LINK TEXT](url)</code>. Make sure there are no spaces between the brackets or the link will not work. When linking to any Whitehall content, use the Whitehall publisher link and not the website URL. The first part of the URL <code>https://whitehall-admin.publishing.service.gov.uk/</code> should be used along with the relative path, for example: /government/admin/publications/123456 (i.e. use relative links).</p></li>
+<li><p>For internal document links, i.e. for providing Markdown links to particular section headings in a publication page (known as ‘anchor’ links, which although, by definition, present accessibility issues, in a report of this complexity are unavoidable), in order to link to a particular section, e.g. ‘SECTION NAME’, the following should be added to the text file, including a ‘stub name’ that uniquely identifies a particular section:</p></li>
+</ul>
+<pre><code>**[SECTION NAME](#STUBNAME)** </code></pre>
+<p>(this will appear in bold font as the clickable ‘SECTION NAME’ in the publication webpage text; the corresponding url being: <code>https://www.gov.uk/......#STUBNAME</code>). Clicking the link will take the reader to the part of the webpage signified in the text file by:</p>
+<pre><code>### SECTION NAME
+{:#STUBNAME}
+&lt;br/&gt;
+&lt;br/&gt;</code></pre>
+<p>i.e. {:#STUBNAME} has to go on a new line, this is then followed by two blank line <code>&lt;br/&gt;</code> HTML codes.
+<strong>EXAMPLE:</strong>
+In a text file: ‘as outlined further in [Indicator 1.2.2] (#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2)’ appears as ‘as outlined further in <code>[Indicator 1.2.2](#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2)</code>’ in the webpage text. Clicking the link in the latter sends the reader to: ‘Indicator 1.2.2 Components of global food demand growth’ section in the webpage, which is also indicated on the left hand side section menu window pane of the GOV.UK webpage. The relevant part of the text file should appear in the form:</p>
+<pre><code>## Indicator 1.2.2 Components of global food demand growth 
+{:#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2}
+&lt;br/&gt;
+&lt;br/&gt;</code></pre>
+<p>It is also possible to have subsections referred to with the same stub name such that clicking the visible link takes the reader to the main section where they can find the relevant subsection below this, e.g. to define the term ‘Gross Value Added’ under the ‘Glossary’ section heading in the ‘Total Factor Productivity of the United Kingdom Food Chain’ publication page <a href="https://www.gov.uk/government/statistics/food-chain-productivity/total-factor-productivity-of-the-united-kingdom-food-chain-2021-final-release">Total Factor Productivity of the United Kingdom Food Chain</a>, the entry ‘In 2021, the value of [Gross Value Added] (#tfp-glossary)’ in the text file is observed on the webpage as <code>'In 2021, the value of **[Gross Value Added](#tfp-glossary)**</code>’ such that ‘### Gross Value Added (GVA)’ appears as its own subsection heading within the glossary,</p>
+<pre><code>## Glossary
+{:#tfp-glossary} 
+.......
+.......
+.......
+### Gross Value Added (GVA)</code></pre>
+<p>For linking to other themes/sections in the report GOV.UK landing page, it is just a case of adding the stub to the end of the url for the report landing page (in this case the name of the stub will be generated by the publishing system and the publishing team will have sight of this; the full url can then be added to the relevant text file before final submission in much the same way as adding CSV file details), e.g.<br/></p>
+<p>switch to Theme 2 from Theme 1</p>
+<pre><code>https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-theme-2-uk-food-supply-sources</code></pre>
+<p><br/>
+switch to the Table of Contents</p>
+<pre><code>https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-contents</code></pre>
+<p><br/>
+switch to the Appendix</p>
+<pre><code>https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-appendix</code></pre>
+<p><br/>
+switch to the landing page</p>
+<pre><code>https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021</code></pre>
+<p><br/></p>
+<p>Stub names can also be used with external links to other GOV.UK publications cited within the report. They can be formatted by adding ‘#’ and the stub name to the external url, with all words separated by hyphens. For example, to link to the section ‘Capacity management’, use <code>https://www.gov.uk/government/publications/public-services-network-psn-service-management-good-practice/service-management-good-practice#capacity-management</code>.</p>
+<ul>
+<li>For email links, use ‘less than’ (&lt;) and ‘greater than’ (&gt;) arrows around email addresses to create links, e.g.</li>
+</ul>
+<pre><code>&lt;example@example.com&gt;</code></pre>
+</div>
+<div id="other-useful-things" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Other useful things<a href="web.html#other-useful-things" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="acronyms-web" class="section level3 hasAnchor" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> Acronym markdown<a href="web.html#acronyms-web" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Add to end of file, each one on a new line, using the format as per the example
 below. This will enable a feature of gov.uk which pops up the acronym definition
 on a tooltip whenever a user hovers their mouse over the text. See

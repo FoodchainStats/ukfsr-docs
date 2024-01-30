@@ -1,4 +1,5 @@
 # Web publishing guidance {#web}
+TEST
 
 ## Overview
 
@@ -21,7 +22,11 @@ in the food team. But there is an overhead.
 
 - web team to commandeer additional resource to cover second-eyes etc process during web print conversion
 
-## Logistics
+
+## Graphics
+
+PNG images must be 960 pixels wide by 640 pixels high at 72 dpi.
+SVGs can be any size and do not need resizing before uploading.
 
 ## Converting Word documents to markdown
 
@@ -39,10 +44,99 @@ pandoc_convert(input = 'FILENAME.docx',
 
 ```
 
-## Graphics
+this process will extract the PNG graphics from each Word document and place them in a separately created /images folder as .png files, leaving behind just the graphic title in the text, e.g. #### Figure X.XX. YYYY (now formatted in Markdown by the conversion process).
 
-Images must be 960 pixels wide by 640 pixels high at 72 dpi.
-SVGs can be any size and do not need resizing before uploading.
+## Logistics
+This should ideally be executed by the analytical lead for each theme:
+
+Once the Word documents have been converted to a .md Markdown text format, the user should firstly check that all Word formatting (headings, etc.) has fed through correctly by highlighting text in the text file and pasting into the box within the [Govspeak converter and preview page](https://govspeak-preview.publishing.service.gov.uk/) and viewing the output on the page. 
+
+Graphics handling: after Word document conversion, directly below the graphic title, add a descriptor (within square brackets) which should contain the graphic filename (with the correct nomenclature) with the inclusion now of the '.svg' suffix for replacement of the PNG files with their SVG equivalents, i.e.
+
+[Image: XX.svg]
+
+leaving a blank line before and after. The SVG files will have been generated using the relevant R code by each analyst. Adoption of this procedure will then correctly synchronise the eventually uploaded, finalised, .md Markdown files with the Whitehall publishing system, the publisher landing page for the report automatically displaying all graphics on the page after the bulk upload of all SVG files performed by the onduty publisher. The publisher will then insert the 'XX.svg' SVG filenames manually underneath each graphic on the publisher landing page.
+
+Check each graphic has an appropriate line about accessibility (i.e. the so-called 'alt-text') directly below each graphic title and its data source and before the links for viewing and downloading pertinent CSV file data, e.g. **Figure XX.X description:** 'Figure XX.X is a line chart that shows the amount of consumer spending in the UK on food and non-alcoholic drink, alcoholic drink (off-licence only) and for catering from 2002 to 2022'. In essence this sentence is an expansion (if necessary) of the graphic title itself.
+
+CSV files: the current standard GOV.UK nomenclature for viewing/downloadng associated data CSV files is, for the data preview, e.g.  
+```
+https://assets.publishing.service.gov.uk/media/64beb60bd4051a00145a9201/foodchainanalysis-productivity-dataset_27jul2023i.csv/preview
+```
+and for the data download, e.g.
+```
+https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/1173363/foodchainanalysis-productivity-dataset_27jul2023i.csv
+```
+it will be good practice to have placeholders for these two urls placed directly underneath the accessibility text, as the onduty publisher will have to insert the unique 'nodes' for each graphic in the last step before submitting the report for 2i approval. Suggested format for this:
+```
+[View the data for this chart](https://assets.publishing.service.gov.uk/media/NODE/XXX_PUBLICATION DATA.csv/preview)  
+
+[Download the data for this chart](https://assets.publishing.service.gov.uk/media/NODE/XXX_PUBLICATION DATA.csv)
+```
+
+## Formatting
+
+- To add external links to GOV.UK pages, use square brackets [] around the link text and round brackets () around the link URL, i.e. ```[LINK TEXT](url)```. Make sure there are no spaces between the brackets or the link will not work. When linking to any Whitehall content, use the Whitehall publisher link and not the website URL. The first part of the URL ``https://whitehall-admin.publishing.service.gov.uk/`` should be used along with the relative path, for example: /government/admin/publications/123456 (i.e. use relative links).
+
+- For internal document links, i.e. for providing Markdown links to particular section headings in a publication page (known as 'anchor' links, which although, by definition, present accessibility issues, in a report of this complexity are unavoidable), in order to link to a particular section, e.g. 'SECTION NAME', the following should be added to the text file, including a 'stub name' that uniquely identifies a particular section:
+```
+**[SECTION NAME](#STUBNAME)** 
+```
+(this will appear in bold font as the clickable ‘SECTION NAME’ in the publication webpage text; the corresponding url being: ```https://www.gov.uk/......#STUBNAME```). Clicking the link will take the reader to the part of the webpage signified in the text file by:
+```
+### SECTION NAME
+{:#STUBNAME}
+<br/>
+<br/>
+```
+i.e. {:#STUBNAME} has to go on a new line, this is then followed by two blank line ```<br/>``` HTML codes. 
+**EXAMPLE:**
+In a text file: 'as outlined further in [Indicator 1.2.2] (#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2)' appears as 'as outlined further in ``[Indicator 1.2.2](#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2)``' in the webpage text. Clicking the link in the latter sends the reader to: 'Indicator 1.2.2 Components of global food demand growth' section in the webpage, which is also indicated on the left hand side section menu window pane of the GOV.UK webpage. The relevant part of the text file should appear in the form:
+```
+## Indicator 1.2.2 Components of global food demand growth 
+{:#united-kingdom-food-security-report-2021-theme1-indicator-1-2-2}
+<br/>
+<br/>
+```
+It is also possible to have subsections referred to with the same stub name such that clicking the visible link takes the reader to the main section where they can find the relevant subsection below this, e.g. to define the term 'Gross Value Added' under the 'Glossary' section heading in the 'Total Factor Productivity of the United Kingdom Food Chain' publication page [Total Factor Productivity of the United Kingdom Food Chain](https://www.gov.uk/government/statistics/food-chain-productivity/total-factor-productivity-of-the-united-kingdom-food-chain-2021-final-release), the entry 'In 2021, the value of [Gross Value Added] (#tfp-glossary)' in the text file is observed on the webpage as ``'In 2021, the value of **[Gross Value Added](#tfp-glossary)**``' such that ‘### Gross Value Added (GVA)’ appears as its own subsection heading within the glossary, 
+```
+## Glossary
+{:#tfp-glossary} 
+.......
+.......
+.......
+### Gross Value Added (GVA)
+```
+For linking to other themes/sections in the report GOV.UK landing page, it is just a case of adding the stub to the end of the url for the report landing page (in this case the name of the stub will be generated by the publishing system and the publishing team will have sight of this; the full url can then be added to the relevant text file before final submission in much the same way as adding CSV file details), e.g.<br/>
+
+switch to Theme 2 from Theme 1
+```
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-theme-2-uk-food-supply-sources
+```
+<br/>
+switch to the Table of Contents
+```
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-contents
+```
+<br/>
+switch to the Appendix
+```
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021/united-kingdom-food-security-report-2021-appendix
+```
+<br/>
+switch to the landing page
+```
+https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2021
+```
+<br/>
+
+Stub names can also be used with external links to other GOV.UK publications cited within the report. They can be formatted by adding '#' and the stub name to the external url, with all words separated by hyphens. For example, to link to the section ‘Capacity management’, use ``https://www.gov.uk/government/publications/public-services-network-psn-service-management-good-practice/service-management-good-practice#capacity-management``.
+
+
+- For email links, use 'less than' (<) and 'greater than' (>) arrows around email addresses to create links, e.g.
+```
+<example@example.com>
+```
 
 ## Other useful things
 

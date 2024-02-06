@@ -47,9 +47,10 @@ final-word-version
 create-pdf
 accessibility
 miscellaneous
-legal-basis
+sharepoint-management-practice
 osr-feedback-on-ukfsr2021
 general-legal-guidance-from-2024
+legal-basis
 publication-deadline
 late-laying-of-the-report
 environmental-principles-policy

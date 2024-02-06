@@ -1,5 +1,4 @@
 # Web publishing guidance {#web}
-TEST
 
 ## Overview
 

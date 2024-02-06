@@ -36,7 +36,7 @@ Here is the current suggested structure for the S3 bucket folders:
 | Level 1 | Level 2 | Level 3 | Level 4  | Comments                                                                    |
 |---------|---------|---------|----------|-----------------------------------------------------------------------------|
 | theme_X |         |         |          | Top level                                                                   |
-|         | TX_s_n  |         |          | Indicator section and number (include description?)                         |
+|         | tX_s_n  |         |          | Indicator section and number (include description?)                         |
 |         |         | data    |          | Raw data in any form can be stored here.                                    |
 |         |         | output  | graphics | Contains png and svg final graphic files                                    |
 |         |         |         | csv      | Contains final csv required to reproduce the graphics in R. In tidy format. |
@@ -51,7 +51,7 @@ its 3 years befoer anyone will look at these again!
 
 **Content filename template**
 
-`TX_s_nv_description.svg/png/csv`
+`tX_s_nv_description.svg/png/csv`
 
 where:
 

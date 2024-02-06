@@ -81,7 +81,7 @@ built up from previous UKFSR production experiences.</p>" />
 <li><a href="./">UK Food Security Report Guidance</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-this-and-how-do-i-use-it"><i class="fa fa-check"></i><b>1.1</b> What is this and how do I use it?</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ukfsr-infrastructure"><i class="fa fa-check"></i><b>1.2</b> UKFSR Infrastructure</a></li>
@@ -150,14 +150,12 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>A</b> Miscellaneous</a>
 <ul>
-<li class="chapter" data-level="A.1" data-path="miscellaneous.html"><a href="miscellaneous.html#legal-basis"><i class="fa fa-check"></i><b>A.1</b> Legal basis</a></li>
+<li class="chapter" data-level="A.1" data-path="miscellaneous.html"><a href="miscellaneous.html#sharepoint-management-practice"><i class="fa fa-check"></i><b>A.1</b> Sharepoint management practice</a></li>
 <li class="chapter" data-level="A.2" data-path="miscellaneous.html"><a href="miscellaneous.html#osr-feedback-on-ukfsr2021"><i class="fa fa-check"></i><b>A.2</b> OSR feedback on UKFSR2021</a></li>
-<li class="chapter" data-level="A.3" data-path="miscellaneous.html"><a href="miscellaneous.html#general-legal-guidance-from-2024"><i class="fa fa-check"></i><b>A.3</b> General legal guidance from 2024</a></li>
-<li class="chapter" data-level="A.4" data-path="miscellaneous.html"><a href="miscellaneous.html#publication-deadline"><i class="fa fa-check"></i><b>A.4</b> Publication deadline</a>
+<li class="chapter" data-level="A.3" data-path="miscellaneous.html"><a href="miscellaneous.html#general-legal-guidance-from-2024"><i class="fa fa-check"></i><b>A.3</b> General legal guidance from 2024</a>
 <ul>
-<li class="chapter" data-level="A.4.1" data-path="miscellaneous.html"><a href="miscellaneous.html#late-laying-of-the-report"><i class="fa fa-check"></i><b>A.4.1</b> Late laying of the report</a></li>
-<li class="chapter" data-level="A.4.2" data-path="miscellaneous.html"><a href="miscellaneous.html#environmental-principles-policy"><i class="fa fa-check"></i><b>A.4.2</b> Environmental principles policy</a></li>
-<li class="chapter" data-level="A.4.3" data-path="miscellaneous.html"><a href="miscellaneous.html#general-considerations"><i class="fa fa-check"></i><b>A.4.3</b> General considerations</a></li>
+<li class="chapter" data-level="A.3.1" data-path="miscellaneous.html"><a href="miscellaneous.html#legal-basis"><i class="fa fa-check"></i><b>A.3.1</b> Legal basis</a></li>
+<li class="chapter" data-level="A.3.2" data-path="miscellaneous.html"><a href="miscellaneous.html#publication-deadline"><i class="fa fa-check"></i><b>A.3.2</b> Publication deadline</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -194,21 +192,24 @@ variables. This means that an individual chart may not have more than 6 series.<
 </div>
 <div id="chart-context" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Chart context<a href="chart.html#chart-context" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Eache chart is accompanied by some additional features:</p>
+<p>Each chart is accompanied by some additional features:</p>
 <ul>
 <li>CSV: the csv of the chart data is required for a preview/download link</li>
-<li>URL to source: the default is a kink to collection pages wherever possible.</li>
+<li>URL to source: the default is a link to collection pages wherever possible.</li>
 </ul>
 </div>
 <div id="resolutionformat" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Resolution/format<a href="chart.html#resolutionformat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>SVG/PNG</p>
+<p>Graphics must be saved in both SVG and PNG format, as required by gov.uk and
+for PDF respectively. See Section <a href="web.html#web">6</a> for more details.</p>
 </div>
 <div id="helpers" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Helpers<a href="chart.html#helpers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We need a <code>theme_fsr</code> theme for chart styleing. Defaults like linewidth = 1.5
-for series need to be specified. We could have an fsr package a la ggfbs but is
-it sensible?</p>
+<p>The <code>ukfsr</code> package contains functions to assist with preparing the report. See
+[link to repo/docs] for details. There is a <code>theme_ukfsr</code> theme for chart
+styling, plus some functions to assist with saving charts and data in the S3
+bucket.</p>
+<p>Defaults like linewidth = 1.5 for series need to be specified?</p>
 
 </div>
 </div>

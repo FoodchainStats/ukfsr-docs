@@ -13,6 +13,21 @@ The UKFSR uses the Analysis Function palette as recommended [here](https://analy
 There are a maximum of 6 colours available in the palette for categorical
 variables. This means that an individual chart may not have more than 6 series.
 
+## Font
+
+The gov.uk site uses a custom font, GDSTransport. Its preferable to ensure that
+text in graphics also uses this font. Example R code below:
+
+```
+library(showtext)
+
+font_add(family = "GDS Transport Website",
+         regular = "font/GDSTransportWebsite.ttf",
+         bold = "font/GDSTransportWebsite-Bold.ttf")
+
+showtext_auto()
+```
+
 ## Chart context
 
 Each chart is accompanied by some additional features:

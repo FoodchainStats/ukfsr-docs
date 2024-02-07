@@ -81,7 +81,7 @@ built up from previous UKFSR production experiences.</p>" />
 <li><a href="./">UK Food Security Report Guidance</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-is-this-and-how-do-i-use-it"><i class="fa fa-check"></i><b>1.1</b> What is this and how do I use it?</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#ukfsr-infrastructure"><i class="fa fa-check"></i><b>1.2</b> UKFSR Infrastructure</a></li>
@@ -106,9 +106,10 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="3" data-path="chart.html"><a href="chart.html"><i class="fa fa-check"></i><b>3</b> Chart Style Guide</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="chart.html"><a href="chart.html#colours"><i class="fa fa-check"></i><b>3.1</b> Colours</a></li>
-<li class="chapter" data-level="3.2" data-path="chart.html"><a href="chart.html#chart-context"><i class="fa fa-check"></i><b>3.2</b> Chart context</a></li>
-<li class="chapter" data-level="3.3" data-path="chart.html"><a href="chart.html#resolutionformat"><i class="fa fa-check"></i><b>3.3</b> Resolution/format</a></li>
-<li class="chapter" data-level="3.4" data-path="chart.html"><a href="chart.html#helpers"><i class="fa fa-check"></i><b>3.4</b> Helpers</a></li>
+<li class="chapter" data-level="3.2" data-path="chart.html"><a href="chart.html#font"><i class="fa fa-check"></i><b>3.2</b> Font</a></li>
+<li class="chapter" data-level="3.3" data-path="chart.html"><a href="chart.html#chart-context"><i class="fa fa-check"></i><b>3.3</b> Chart context</a></li>
+<li class="chapter" data-level="3.4" data-path="chart.html"><a href="chart.html#resolutionformat"><i class="fa fa-check"></i><b>3.4</b> Resolution/format</a></li>
+<li class="chapter" data-level="3.5" data-path="chart.html"><a href="chart.html#helpers"><i class="fa fa-check"></i><b>3.5</b> Helpers</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> Data guide</a>
 <ul>
@@ -190,21 +191,33 @@ produced by the <a href="https://analysisfunction.civilservice.gov.uk/policy-sto
 <p>There are a maximum of 6 colours available in the palette for categorical
 variables. This means that an individual chart may not have more than 6 series.</p>
 </div>
-<div id="chart-context" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Chart context<a href="chart.html#chart-context" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="font" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Font<a href="chart.html#font" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The gov.uk site uses a custom font, GDSTransport. Its preferable to ensure that
+text in graphics also uses this font. Example R code below:</p>
+<pre><code>library(showtext)
+
+font_add(family = &quot;GDS Transport Website&quot;,
+         regular = &quot;font/GDSTransportWebsite.ttf&quot;,
+         bold = &quot;font/GDSTransportWebsite-Bold.ttf&quot;)
+
+showtext_auto()</code></pre>
+</div>
+<div id="chart-context" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Chart context<a href="chart.html#chart-context" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Each chart is accompanied by some additional features:</p>
 <ul>
 <li>CSV: the csv of the chart data is required for a preview/download link</li>
 <li>URL to source: the default is a link to collection pages wherever possible.</li>
 </ul>
 </div>
-<div id="resolutionformat" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Resolution/format<a href="chart.html#resolutionformat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="resolutionformat" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Resolution/format<a href="chart.html#resolutionformat" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Graphics must be saved in both SVG and PNG format, as required by gov.uk and
 for PDF respectively. See Section <a href="web.html#web">6</a> for more details.</p>
 </div>
-<div id="helpers" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Helpers<a href="chart.html#helpers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="helpers" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Helpers<a href="chart.html#helpers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The <code>ukfsr</code> package contains functions to assist with preparing the report. See
 [link to repo/docs] for details. There is a <code>theme_ukfsr</code> theme for chart
 styling, plus some functions to assist with saving charts and data in the S3

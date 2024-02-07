@@ -18,6 +18,7 @@ numbers
 quotation-marks
 chart
 colours
+font
 chart-context
 resolutionformat
 helpers

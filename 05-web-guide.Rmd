@@ -43,7 +43,10 @@ pandoc_convert(input = 'FILENAME.docx',
 
 ```
 
-this process will extract the PNG graphics from each Word document and place them in a separately created /images/media folder as .png files, leaving behind just a placeholder for the graphic in the text, e.g. '<img src="./images/media/image1.png" style="width:6.69375in;height:2.75347in" />'. 
+this process will extract the PNG graphics from each Word document and place them in a separately created /images/media folder as .png files, leaving behind just a placeholder for the graphic in the text, e.g. 
+```
+<img src="./images/media/image1.png" style="width:6.69375in;height:2.75347in" />
+```
 
 ## Logistics
 This should ideally be executed by the analytical lead for each theme:

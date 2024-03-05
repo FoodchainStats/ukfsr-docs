@@ -121,6 +121,11 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="4.2.3" data-path="data.html"><a href="data.html#file-naming-convention"><i class="fa fa-check"></i><b>4.2.3</b> File naming convention</a></li>
 <li class="chapter" data-level="4.2.4" data-path="data.html"><a href="data.html#code"><i class="fa fa-check"></i><b>4.2.4</b> Code</a></li>
 </ul></li>
+<li class="chapter" data-level="4.3" data-path="data.html"><a href="data.html#downloading-data"><i class="fa fa-check"></i><b>4.3</b> Downloading Data</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="data.html"><a href="data.html#downloading-single-files"><i class="fa fa-check"></i><b>4.3.1</b> Downloading Single Files:</a></li>
+<li class="chapter" data-level="4.3.2" data-path="data.html"><a href="data.html#download"><i class="fa fa-check"></i><b>4.3.2</b> Downloading Complete Folders:</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="theme-guides.html"><a href="theme-guides.html"><i class="fa fa-check"></i><b>5</b> Theme guides</a>
 <ul>
@@ -290,6 +295,39 @@ its 3 years befoer anyone will look at these again!</p>
 <div id="code" class="section level3 hasAnchor" number="4.2.4">
 <h3><span class="header-section-number">4.2.4</span> Code<a href="data.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at <a href="https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024">https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024</a>. It is crucial that the content code for graphics and related output is captured here.</p>
+</div>
+</div>
+<div id="downloading-data" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Downloading Data<a href="data.html#downloading-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Following the format and data storage outlined above, you can easily access and download both the raw data and final visualizations and CSVs produced for this project. This section guides you through downloading entire folders containing SVGs, JPGs, and related CSVs data files, as well as individual files.</p>
+<div id="downloading-single-files" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Downloading Single Files:<a href="data.html#downloading-single-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you only need a specific file, you can directly download it from the S3 bucket using the web interface. Here’s how:</p>
+<ol style="list-style-type: decimal">
+<li><p>Navigate to the S3 bucket: Access the AWS Management Console and navigate to the S3 service. Locate and select the bucket containing your data (e.g., s3-ranch-054).</p></li>
+<li><p>Locate the desired file: Browse through the folders and files within the bucket until you find the specific file you want to download.</p></li>
+</ol>
+<p>(<strong>Note:</strong> While the S3 web interface allows selecting individual files for download, downloading multiple files at once might not be supported. If you need to download multiple files, refer to <strong>(Section <a href="data.html#download">4.3.2</a>)</strong> for instructions on downloading complete folders.)</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Click the “Download” button: Once you’ve selected the files, look for the “Download” button on the ribbon at the top of the bucket view. Clicking this button will initiate the download process, and the file will be saved to your local machine.</li>
+</ol>
+</div>
+<div id="download" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Downloading Complete Folders:<a href="data.html#download" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you prefer to download entire folders containing all data or visualization files or both for specific themes or indicator. This is possible through the aws s3 cp command in your RStudio server terminal.</p>
+<p><strong>Code and Explanation:</strong></p>
+<p><code>aws s3 cp --recursive s3://&lt;bucket&gt;/&lt;folder&gt; &lt;local_folder&gt;</code></p>
+<p>where:</p>
+<ul>
+<li><p><bucket>: Replace this with the actual S3 bucket name, e.g., s3-ranch-054.</p></li>
+<li><p><folder>: Replace this with the specific folder path within the bucket, e.g., theme_3. This can include subfolders using forward slashes (e.g., theme_3/t3_1_2/output/graphics).</p></li>
+<li><p><local_folder>: Replace this with the desired folder name to which the files need to be stored in your local directory of R Studio Server on your machine.</p></li>
+</ul>
+<p><strong>Example:</strong></p>
+<p><code>aws s3 cp --recursive s3://s3-ranch-054/theme_3/ theme_3</code></p>
+<p>or</p>
+<p><code>aws s3 cp --recursive s3://s3-ranch-054/theme_3/t3_1_2/output/graphics/ theme_3</code></p>
+<p>The 1st command will download the entire theme_3 folder from the S3 bucket, including all its subfolders and files, to a local folder named theme_3 on your machine. Similarly, the 2nd command will just download the subfolder “graphics” of specific indicator to a local folder named theme_3 on your machine.</p>
 
 </div>
 </div>

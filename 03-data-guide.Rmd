@@ -36,7 +36,7 @@ Here is the current suggested structure for the S3 bucket folders:
 | Level 1 | Level 2 | Level 3 | Level 4  | Comments                                                                    |
 |---------|---------|---------|----------|-----------------------------------------------------------------------------|
 | theme_X |         |         |          | Top level                                                                   |
-|         | TX_s_n  |         |          | Indicator section and number (include description?)                         |
+|         | tX_s_n  |         |          | Indicator section and number (include description?)                         |
 |         |         | data    |          | Raw data in any form can be stored here.                                    |
 |         |         | output  | graphics | Contains png and svg final graphic files                                    |
 |         |         |         | csv      | Contains final csv required to reproduce the graphics in R. In tidy format. |
@@ -51,7 +51,7 @@ its 3 years befoer anyone will look at these again!
 
 **Content filename template**
 
-`TX_s_nv_description.svg/png/csv`
+`tX_s_nv_description.svg/png/csv`
 
 where:
 
@@ -73,3 +73,42 @@ where:
 The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at [https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024](https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024). It is crucial that the content code for graphics and related output is captured here.
 
 
+##	 Downloading Data
+Following the format and data storage outlined above, you can easily access and download both the raw data and final visualizations and CSVs produced for this project. This section guides you through downloading entire folders containing SVGs, JPGs, and related CSVs data files, as well as individual files.
+
+###	Downloading Single Files:
+If you only need a specific file, you can directly download it from the S3 bucket using the web interface. Here's how:
+
+1.	Navigate to the S3 bucket: Access the AWS Management Console and navigate to the S3 service. Locate and select the bucket containing your data (e.g., s3-ranch-054).
+
+2.	Locate the desired file: Browse through the folders and files within the bucket until you find the specific file you want to download.
+
+(**Note:** While the S3 web interface allows selecting individual files for download, downloading multiple files at once might not be supported. If you need to download multiple files, refer to **(Section \@ref(download))** for instructions on downloading complete folders.)
+
+3.	Click the "Download" button: Once you've selected the files, look for the "Download" button on the ribbon at the top of the bucket view. Clicking this button will initiate the download process, and the file will be saved to your local machine.
+
+###	Downloading Complete Folders: {#download}
+
+If you prefer to download entire folders containing all data or visualization files or both for specific themes or indicator. This is possible through the aws s3 cp command in your RStudio server terminal.
+
+**Code and Explanation:**
+
+`aws s3 cp --recursive s3://<bucket>/<folder> <local_folder>`
+
+where:
+
+-	<bucket>: Replace this with the actual S3 bucket name, e.g., s3-ranch-054.
+
+-	<folder>: Replace this with the specific folder path within the bucket, e.g., theme_3. This can include subfolders using forward slashes (e.g., theme_3/t3_1_2/output/graphics).
+
+-	<local_folder>: Replace this with the desired folder name to which the files need to be stored in your local directory of R Studio Server on your machine.
+
+**Example:**
+
+`aws s3 cp --recursive s3://s3-ranch-054/theme_3/ theme_3`
+
+or
+
+`aws s3 cp --recursive s3://s3-ranch-054/theme_3/t3_1_2/output/graphics/ theme_3`
+
+The 1st command will download the entire theme_3 folder from the S3 bucket, including all its subfolders and files, to a local folder named theme_3 on your machine. Similarly, the 2nd command will just download the subfolder “graphics” of specific indicator to a local folder named theme_3 on your machine.

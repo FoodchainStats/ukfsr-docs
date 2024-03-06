@@ -13,19 +13,38 @@ The UKFSR uses the Analysis Function palette as recommended [here](https://analy
 There are a maximum of 6 colours available in the palette for categorical
 variables. This means that an individual chart may not have more than 6 series.
 
+## Font
+
+The gov.uk site uses a custom font, GDSTransport. Its preferable to ensure that
+text in graphics also uses this font. Example R code below:
+
+```
+library(showtext)
+
+font_add(family = "GDS Transport Website",
+         regular = "font/GDSTransportWebsite.ttf",
+         bold = "font/GDSTransportWebsite-Bold.ttf")
+
+showtext_auto()
+```
+
 ## Chart context
 
-Eache chart is accompanied by some additional features:
+Each chart is accompanied by some additional features:
 
 - CSV: the csv of the chart data is required for a preview/download link
-- URL to source: the default is a kink to collection pages wherever possible.
+- URL to source: the default is a link to collection pages wherever possible.
 
 ## Resolution/format
 
-SVG/PNG
+Graphics must be saved in  both SVG and PNG format, as required by gov.uk and
+for PDF respectively. See Section \@ref(web) for more details.
 
 ## Helpers
 
-We need a `theme_fsr` theme for chart styleing. Defaults like linewidth = 1.5
-for series need to be specified. We could have an fsr package a la ggfbs but is
-it sensible?
+The `ukfsr` package contains functions to assist with preparing the report. See
+[link to repo/docs] for details. There is a `theme_ukfsr` theme for chart
+styling, plus some functions to assist with saving charts and data in the S3
+bucket.
+
+Defaults like linewidth = 1.5 for series need to be specified?

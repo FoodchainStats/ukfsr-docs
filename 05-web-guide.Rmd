@@ -27,7 +27,7 @@ in the food team. But there is an overhead.
 PNG images must be 960 pixels wide by 640 pixels high at 72 dpi.
 SVGs can be any size and do not need resizing before uploading.
 
-## Converting Word documents to markdown
+## Converting Word documents to markdown 
 
 
 R code for 

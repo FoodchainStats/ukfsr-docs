@@ -3,6 +3,7 @@ what-is-this-and-how-do-i-use-it
 ukfsr-infrastructure
 timings-resources-and-pinch-points
 text
+accessibility
 formatting-styles
 spellingword-choice
 sentence-length
@@ -49,7 +50,7 @@ acronyms-web
 print
 final-word-version
 create-pdf
-accessibility
+accessibility-1
 miscellaneous
 sharepoint-management-practice
 osr-feedback-on-ukfsr2021

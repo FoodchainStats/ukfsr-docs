@@ -3,6 +3,7 @@ what-is-this-and-how-do-i-use-it
 ukfsr-infrastructure
 timings-resources-and-pinch-points
 text
+accessibility
 formatting-styles
 spellingword-choice
 sentence-length
@@ -18,6 +19,7 @@ numbers
 quotation-marks
 chart
 colours
+font
 chart-context
 resolutionformat
 helpers
@@ -28,6 +30,9 @@ access
 structure
 file-naming-convention
 code
+downloading-data
+downloading-single-files
+download
 theme-guides
 theme-1
 theme-2
@@ -45,11 +50,12 @@ acronyms-web
 print
 final-word-version
 create-pdf
-accessibility
+accessibility-1
 miscellaneous
-legal-basis
+sharepoint-management-practice
 osr-feedback-on-ukfsr2021
 general-legal-guidance-from-2024
+legal-basis
 publication-deadline
 late-laying-of-the-report
 environmental-principles-policy

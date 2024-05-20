@@ -19,6 +19,11 @@ Use appropriate styles in Word, particularly for *headings*. Heading styles are 
 
 **Note there is no need to worry about the specifics of formatting and the look of the text during drafting, in terms of font, colour, spacing etc. Concentrate on the content. Stick to marking text attributes such as heading level, bold, bulleted list etc. The Defra publication template and web publishing process will deal with the look of the finished product.** 
 
+```{r word-conversion, child="01-text-style-guide.md"}
+
+```
+
+
 ## Spelling/Word choice 
 
  - Say “UKFSR” or “this report”, not “the Report”. 

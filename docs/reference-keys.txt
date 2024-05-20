@@ -7,9 +7,9 @@ accessibility
 formatting-styles
 spellingword-choice
 sentence-length
-urls
-refs
-acronyms-text
+urlslinks
+references
+acronyms
 labelling-data
 indicator-section-headings
 the-voice
@@ -17,6 +17,18 @@ e.g.-i.e.-etc.
 symbols
 numbers
 quotation-marks
+spellingword-choice-1
+sentence-length-1
+urls
+refs
+acronyms-text
+labelling-data-1
+indicator-section-headings-1
+the-voice-1
+e.g.-i.e.-etc.-1
+symbols-1
+numbers-1
+quotation-marks-1
 chart
 colours
 font
@@ -60,4 +72,3 @@ publication-deadline
 late-laying-of-the-report
 environmental-principles-policy
 general-considerations
-url-your-book-url-like-httpsbookdown.orgyihuibookdown

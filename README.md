@@ -22,7 +22,7 @@ more comfortable with Sharepoint and Word, we let them edit that bit of the
 guide in Word and incorporate it into this site by periodically converting the
 Word doc into a Markdown md file using pandoc. The instructions for doing that
 are basically the same as in the web publishing section of this guide. Firstly,
-we convert the docx (make sure you have removed any track chenges from it
+we convert the docx (make sure you have removed any track changes from it
 first):
 
 ```
@@ -34,7 +34,8 @@ pandoc_convert(input = 'style-guide.docx',
                            "--reference-links"))
 ```
 
-Then check the md output. You must remove any level 1 headings, else it will
+Then check the md output. The file 01-text-style-guide.Rmd pulls this md file in
+when the site is built. You must remove any level 1 headings, else it will 
 mess up the website structure. If there is any fancy formatting it might also
 mess up the output, so check before pushing the output to Github.
 

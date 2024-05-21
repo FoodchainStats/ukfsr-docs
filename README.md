@@ -20,8 +20,23 @@ so they are effectively just markdown files.
 The text style guide section is a bit different. Because the policy team are
 more comfortable with Sharepoint and Word, we let them edit that bit of the
 guide in Word and incorporate it into this site by periodically converting the
-Word doc into a Markdown md file using pandoc. THe instructions for doing that
-are the same as in the web publishing section of this guide.
+Word doc into a Markdown md file using pandoc. The instructions for doing that
+are basically the same as in the web publishing section of this guide. Firstly,
+we convert the docx (make sure you have removed any track chenges from it
+first):
+
+```
+library(rmarkdown)
+pandoc_convert(input = 'style-guide.docx',
+               to="markdown_mmd",
+               output = "01-text-style-guide.md", 
+               options = c("--wrap=none",
+                           "--reference-links"))
+```
+
+Then check the md output. You must remove any level 1 headings, else it will
+mess up the website structure. If there is any fancy formatting it might also
+mess up the output, so check before pushing the output to Github.
 
 To update the guidance you need to render the site using the code below. Make
 sure to copy the docx thats generated into the /docs folder, if you need to.

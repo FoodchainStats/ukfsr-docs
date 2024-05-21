@@ -1,21 +1,29 @@
 # Text style guide {#text}
 
-
-For chart design guidance, see Section \@ref(chart). There is a GDS style guide
-for all content published on gov.uk is available
-[here](https://www.gov.uk/guidance/style-guide). The UKFSR guide is intended to
-complement this.
-
 ## Accessibility
 
 It is a legal obligation to make sure that our content is accessible, and this
-applies to written content, graphics and tables. The Analysis Function has
-guidance on [accessibility and plain
-English](https://analysisfunction.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/).
+applies to written content, graphics and tables. For chart design guidance, see
+Section \@ref(chart).
+
+## Hierarchy of guidance
+
+There is a [GDS style guide](https://www.gov.uk/guidance/style-guide) for all
+content published on gov.uk, and this is the primary reference.  The Analysis
+Function also has guidance on [accessibility and plain
+English](https://analysisfunction.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-3)
+which complements it. This UKFSR guide is intended to capture all of the things
+which are specific to the publication, or which are not covered in the other two
+guide.
+
 
 ## Formatting styles
 
-Use appropriate styles in Word, particularly for *headings*. Heading styles are critical to the structure of the web publications (see \@ref(web)), and building the table of contents in the print version (see \@ref(print)). If you dont use styles during drafting, its a massive horrible job to retrofit them at the end when time is short.
+Use appropriate styles in Word, particularly for *headings*. Heading styles are
+critical to the structure of the web publications (see \@ref(web)), and building
+the table of contents in the print version (see \@ref(print)). If you dont use
+styles during drafting, its a massive horrible job to retrofit them at the end
+when time is short.
 
 **Note there is no need to worry about the specifics of formatting and the look of the text during drafting, in terms of font, colour, spacing etc. Concentrate on the content. Stick to marking text attributes such as heading level, bold, bulleted list etc. The Defra publication template and web publishing process will deal with the look of the finished product.** 
 

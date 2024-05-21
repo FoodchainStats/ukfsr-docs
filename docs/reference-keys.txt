@@ -4,6 +4,7 @@ ukfsr-infrastructure
 timings-resources-and-pinch-points
 text
 accessibility
+hierarchy-of-guidance
 formatting-styles
 spellingword-choice
 sentence-length

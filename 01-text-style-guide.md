@@ -22,7 +22,7 @@
 
 -   Production to Supply Ratio does not have a standard abbreviation, do not abbreviate
 
--   Instead of referring to the cost-of-living crisis, instead say that it is the “period of high inflation between 2021-2023”.
+-   Instead of referring to the cost-of-living crisis, instead say that it is the “period of high inflation between 2021 and 2023”.
 
 -   Talking about Brexit:
 
@@ -99,26 +99,38 @@ If the reference is available online, make the title a link and include the date
 
 ## Indicator section headings
 
-Each indicator should have the following headings (check for consistent spelling):
+-   **Rationale** (Theme Lead)
+    -   What is the stat? Why is it included? What question is it answering? E.g. the stat is x and helps us measure y, telling us z.
 
--   **Headline**
+    -   How does the stat link to food security?
 
-    -   Brief summary of the key findings in the indicator – seen from a “what this means for food security lens” (ie, ‘the UK produces around 80% of the wheat it consumes; average production is stable with some fluctuations due to weather’ rather than ‘the UK produces x million tons of wheat’)
+    -   2-3 sentences, giving reader key understanding before they see the assessment.
 
--   **Context and Rationale**
+-   **Assessment** (Analyst lead)
 
-    -   Background information for the data and explanation why this data matters for UK food security
+    -   What is the key data point and source? (Make clear to the reader what is being measured)
 
--   **Data and Assessment**
+    -   Are there any caveats/ changes to the key data point?
 
-    -   Data and source
-        -   If multiple sources, list as follows:
-        -   Source: FSA; FSS
-    -   Description of what the data in the ‘Data and Assessment’ section is showing
+    -   Explain what the data says about the state of UK food security and how this has changed or remained constant since 2021.
 
--   **Rating and Trends / Direction of Travel**
+        -   [Assessment language placeholder] Jeeves/Will to work up some phrases which can be used to summarise the Assessment section (e.g., “this trends expands the risk to food security”; “the strength to food security is shown through…”)
 
-    -   State any visible trends in the data: ie, things appear to be stable, or to fluctuate, or have a clear positive upward/downward trend, or it’s not clear from available data. Note also any important external factors.
+    -   If there is something specific which can link the assessment section to the commentary section, mention it in Assessment, and develop it further in the Commentary.
+
+    -   3-4 sentences. There will likely be 1 graph for the key statistic.
+
+-   **Commentary** (Theme Lead / confirmed by analyst)
+
+    -   There will likely be 2-3 graphs for the supporting statistic (consider Analyst’s capacity to produce the graphs).
+
+    -   **Short term:** use the supporting data points to provide context to the **key** data point across a three-year period.
+
+    -   **Long term:** use any supporting data points which are relevant to showcasing meaningful trends (or absence of trend) over the long term. Look at past data and a forward look. Climate data could be integrated into this section.
+
+        -   This section should have a clear time element (Recommended timescale is between 1950-2050)
+
+        -   More detail/nuance on the statistic or supporting data/risks/opportunities.
 
 ## The ‘Voice’
 

@@ -4,12 +4,13 @@ ukfsr-infrastructure
 timings-resources-and-pinch-points
 text
 accessibility
+hierarchy-of-guidance
 formatting-styles
 spellingword-choice
 sentence-length
-urls
-refs
-acronyms-text
+urlslinks
+references
+acronyms
 labelling-data
 indicator-section-headings
 the-voice
@@ -60,4 +61,3 @@ publication-deadline
 late-laying-of-the-report
 environmental-principles-policy
 general-considerations
-url-your-book-url-like-httpsbookdown.orgyihuibookdown

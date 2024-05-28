@@ -4,10 +4,8 @@ How we prepare and organise data.
 
 ## Format
 
-The data underlying each chart needs to be stored in csv format. This is so we
-can offer a preview link for the data alongside each chart.
+The data underlying each chart should be stored in csv format. 
 
-**GDS Transport font!!**
 
 ## Storage
 
@@ -63,20 +61,20 @@ where:
 
 - `v` is indicator variant, eg a,b,c, etc
 
-- `description` needs to be enough to uniquely describe the content. Use *snake_case* as necessary.
+- `description` needs to be enough to uniquely describe the content. Use *snake_case* as necessary. If you use the `ukfsr::save_*()` function, it will ensure your files adhere to the standard (see \@ref(ukfsr-package)).
 
 - **filetype** must be `csv` for data, `svg`/`png` for web/print respectively
 
 
 ### Code
 
-The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at [https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024](https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024). It is crucial that the content code for graphics and related output is captured here.
+The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public [UKFSR2024](https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024) Github repository. It is crucial that the content code for graphics and related output is captured here.
 
 
 ##	 Downloading Data
 Following the format and data storage outlined above, you can easily access and download both the raw data and final visualizations and CSVs produced for this project. This section guides you through downloading entire folders containing SVGs, JPGs, and related CSVs data files, as well as individual files.
 
-###	Downloading Single Files:
+###	Downloading Single Files
 If you only need a specific file, you can directly download it from the S3 bucket using the web interface. Here's how:
 
 1.	Navigate to the S3 bucket: Access the AWS Management Console and navigate to the S3 service. Locate and select the bucket containing your data (e.g., s3-ranch-054).
@@ -97,11 +95,11 @@ If you prefer to download entire folders containing all data or visualization fi
 
 where:
 
--	<bucket>: Replace this with the actual S3 bucket name, e.g., s3-ranch-054.
+-	bucket: Replace this with the actual S3 bucket name, e.g., s3-ranch-054.
 
--	<folder>: Replace this with the specific folder path within the bucket, e.g., theme_3. This can include subfolders using forward slashes (e.g., theme_3/t3_1_2/output/graphics).
+-	folder: Replace this with the specific folder path within the bucket, e.g., theme_3. This can include subfolders using forward slashes (e.g., theme_3/t3_1_2/output/graphics).
 
--	<local_folder>: Replace this with the desired folder name to which the files need to be stored in your local directory of R Studio Server on your machine.
+-	local_folder: Replace this with the desired folder name to which the files need to be stored in your local directory of R Studio Server on your machine.
 
 **Example:**
 

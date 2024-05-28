@@ -67,7 +67,7 @@ part of its underlying infrastructure:
 - The text content (probably drafted and hosted on Sharepoint during production)
 - The underlying data and graphics content, hosted on an Amazon S3 bucket
 - The [code](https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024) to produce the graphics and data for preview
-- The [`ukfsr`](https://github.com/FoodchainStats/ukfsr) R package containing miscellanous helper functions
+- The [`ukfsr`](https://github.com/FoodchainStats/ukfsr) R package containing miscellaneous helper functions
 - This documentation
 
 All of this content is combined to produce *two* key outputs:

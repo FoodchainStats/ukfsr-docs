@@ -26,7 +26,7 @@ colours
 font
 chart-context
 resolutionformat
-helpers
+ukfsr-package
 data
 format
 storage

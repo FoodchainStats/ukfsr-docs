@@ -118,7 +118,7 @@ built up from previous UKFSR production experiences.</p>" />
 <li class="chapter" data-level="3.2" data-path="chart.html"><a href="chart.html#font"><i class="fa fa-check"></i><b>3.2</b> Font</a></li>
 <li class="chapter" data-level="3.3" data-path="chart.html"><a href="chart.html#chart-context"><i class="fa fa-check"></i><b>3.3</b> Chart context</a></li>
 <li class="chapter" data-level="3.4" data-path="chart.html"><a href="chart.html#resolutionformat"><i class="fa fa-check"></i><b>3.4</b> Resolution/format</a></li>
-<li class="chapter" data-level="3.5" data-path="chart.html"><a href="chart.html#helpers"><i class="fa fa-check"></i><b>3.5</b> Helpers</a></li>
+<li class="chapter" data-level="3.5" data-path="chart.html"><a href="chart.html#ukfsr-package"><i class="fa fa-check"></i><b>3.5</b> Helpers</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>4</b> Data guide</a>
 <ul>
@@ -132,7 +132,7 @@ built up from previous UKFSR production experiences.</p>" />
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="data.html"><a href="data.html#downloading-data"><i class="fa fa-check"></i><b>4.3</b> Downloading Data</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="data.html"><a href="data.html#downloading-single-files"><i class="fa fa-check"></i><b>4.3.1</b> Downloading Single Files:</a></li>
+<li class="chapter" data-level="4.3.1" data-path="data.html"><a href="data.html#downloading-single-files"><i class="fa fa-check"></i><b>4.3.1</b> Downloading Single Files</a></li>
 <li class="chapter" data-level="4.3.2" data-path="data.html"><a href="data.html#download"><i class="fa fa-check"></i><b>4.3.2</b> Downloading Complete Folders:</a></li>
 </ul></li>
 </ul></li>
@@ -198,9 +198,7 @@ built up from previous UKFSR production experiences.</p>" />
 <p>How we prepare and organise data.</p>
 <div id="format" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Format<a href="data.html#format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The data underlying each chart needs to be stored in csv format. This is so we
-can offer a preview link for the data alongside each chart.</p>
-<p><strong>GDS Transport font!!</strong></p>
+<p>The data underlying each chart should be stored in csv format.</p>
 </div>
 <div id="storage" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Storage<a href="data.html#storage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -297,20 +295,20 @@ its 3 years befoer anyone will look at these again!</p>
 <li><p><code>s</code> is section number</p></li>
 <li><p><code>n</code> is indicator number</p></li>
 <li><p><code>v</code> is indicator variant, eg a,b,c, etc</p></li>
-<li><p><code>description</code> needs to be enough to uniquely describe the content. Use <em>snake_case</em> as necessary.</p></li>
+<li><p><code>description</code> needs to be enough to uniquely describe the content. Use <em>snake_case</em> as necessary. If you use the <code>ukfsr::save_*()</code> function, it will ensure your files adhere to the standard (see <a href="chart.html#ukfsr-package">3.5</a>).</p></li>
 <li><p><strong>filetype</strong> must be <code>csv</code> for data, <code>svg</code>/<code>png</code> for web/print respectively</p></li>
 </ul>
 </div>
 <div id="code" class="section level3 hasAnchor" number="4.2.4">
 <h3><span class="header-section-number">4.2.4</span> Code<a href="data.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public Github repository at <a href="https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024">https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024</a>. It is crucial that the content code for graphics and related output is captured here.</p>
+<p>The S3 bucket is not a public resource (although generally its contents need not be stored securely). But the code to produce the content is stored in a public <a href="https://github.com/Defra-Data-Science-Centre-of-Excellence/UKFSR2024">UKFSR2024</a> Github repository. It is crucial that the content code for graphics and related output is captured here.</p>
 </div>
 </div>
 <div id="downloading-data" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Downloading Data<a href="data.html#downloading-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Following the format and data storage outlined above, you can easily access and download both the raw data and final visualizations and CSVs produced for this project. This section guides you through downloading entire folders containing SVGs, JPGs, and related CSVs data files, as well as individual files.</p>
 <div id="downloading-single-files" class="section level3 hasAnchor" number="4.3.1">
-<h3><span class="header-section-number">4.3.1</span> Downloading Single Files:<a href="data.html#downloading-single-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">4.3.1</span> Downloading Single Files<a href="data.html#downloading-single-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you only need a specific file, you can directly download it from the S3 bucket using the web interface. Here’s how:</p>
 <ol style="list-style-type: decimal">
 <li><p>Navigate to the S3 bucket: Access the AWS Management Console and navigate to the S3 service. Locate and select the bucket containing your data (e.g., s3-ranch-054).</p></li>
@@ -328,9 +326,9 @@ its 3 years befoer anyone will look at these again!</p>
 <p><code>aws s3 cp --recursive s3://&lt;bucket&gt;/&lt;folder&gt; &lt;local_folder&gt;</code></p>
 <p>where:</p>
 <ul>
-<li><p><bucket>: Replace this with the actual S3 bucket name, e.g., s3-ranch-054.</p></li>
-<li><p><folder>: Replace this with the specific folder path within the bucket, e.g., theme_3. This can include subfolders using forward slashes (e.g., theme_3/t3_1_2/output/graphics).</p></li>
-<li><p><local_folder>: Replace this with the desired folder name to which the files need to be stored in your local directory of R Studio Server on your machine.</p></li>
+<li><p>bucket: Replace this with the actual S3 bucket name, e.g., s3-ranch-054.</p></li>
+<li><p>folder: Replace this with the specific folder path within the bucket, e.g., theme_3. This can include subfolders using forward slashes (e.g., theme_3/t3_1_2/output/graphics).</p></li>
+<li><p>local_folder: Replace this with the desired folder name to which the files need to be stored in your local directory of R Studio Server on your machine.</p></li>
 </ul>
 <p><strong>Example:</strong></p>
 <p><code>aws s3 cp --recursive s3://s3-ranch-054/theme_3/ theme_3</code></p>

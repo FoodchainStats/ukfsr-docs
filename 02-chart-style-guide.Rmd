@@ -40,7 +40,7 @@ Each chart is accompanied by some additional features:
 Graphics must be saved in  both SVG and PNG format, as required by gov.uk and
 for PDF respectively. See Section \@ref(web) for more details.
 
-## Helpers
+## Helpers {#ukfsr-package}
 
 The [`ukfsr`](https://github.com/FoodchainStats/ukfsr) package contains functions
 to assist with preparing the report.  There is a `theme_ukfsr()` theme for chart

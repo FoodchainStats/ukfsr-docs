@@ -42,9 +42,7 @@ for PDF respectively. See Section \@ref(web) for more details.
 
 ## Helpers
 
-The `ukfsr` package contains functions to assist with preparing the report. See
-[link to repo/docs] for details. There is a `theme_ukfsr` theme for chart
+The [`ukfsr`](https://github.com/FoodchainStats/ukfsr) package contains functions
+to assist with preparing the report.  There is a `theme_ukfsr()` theme for chart
 styling, plus some functions to assist with saving charts and data in the S3
 bucket.
-
-Defaults like linewidth = 1.5 for series need to be specified?

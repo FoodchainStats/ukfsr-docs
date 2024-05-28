@@ -79,6 +79,13 @@ In addition, there may be other published outputs, such as condensed reports,
 technical annexes etc, depending on individual feedback.
 
 
+## Accessibility
+
+It is a legal obligation to make sure that our content is accessible, and this
+applies to written content, graphics and tables. Text cintent guidance is in
+Section \@ref(text).For chart design guidance, see Section \@ref(chart).
+
+
 ## Timings, resources and pinch points
 
 The project plan is outside of the scope of this guide. However it is worth

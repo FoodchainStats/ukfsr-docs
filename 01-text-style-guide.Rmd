@@ -83,6 +83,14 @@ If the reference is available online, make the title a link and include the date
 
 -   Example given on gov.uk: Corallo AN and others. [‘A systematic review of medical practice variation in OECD countries’] Health Policy 2014: volume 114, pages 5 to 14.
 
+### Evidence gaps
+
+As an official statistics document, its not the role of the UKFSR to make
+recommendations for future research. However the report reflects the current
+evidence base on issues relevant to food security, and therefore it is in scope
+to reference areas where there are gaps in the evidence.
+
+
 ### URLs/Links
 
 See 2.6 for references to academic reports. *Link to sources, data and relevant online material liberally*, and when in doubt, link! Remember that this is not necessarily relevant to the print edition but fundamental to the online version. Todays readers expect to be able to click through to verify or explore further the data and other sources we refer to. It is fundamental to the credibility of the report.

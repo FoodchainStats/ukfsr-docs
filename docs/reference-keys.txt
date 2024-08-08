@@ -10,6 +10,7 @@ formatting-styles
 indicator-section-headings
 labelling-data
 references
+evidence-gaps
 urlslinks
 spelling-and-style
 sentence-length

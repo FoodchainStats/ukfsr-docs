@@ -21,7 +21,7 @@ This is an experimental site for documentation and guidance relating to
 producing the UKFSR. Its intended audience is mainly the production team,
 present and future. The source is
 [here](https://github.com/FoodchainStats/ukfsr-docs). Got suggestions for things
-to add/change? Go [here](https://github.com/FoodchainStats/ukfsr-docs/issues),
+to add/change? You can go [here](https://github.com/FoodchainStats/ukfsr-docs/issues),
 open a new issue and submit your comments.
 
 

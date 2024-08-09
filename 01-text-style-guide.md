@@ -1,3 +1,8 @@
+Please apply Defra style guide:
+
+[How to write for Defra (sharepoint.com)]
+
+**Highlights of Defra guidance and points specific to UKFSR**
 
 ### Sentence length
 
@@ -97,10 +102,4 @@ Use double quotes:
 -   focusing
 -   key (unless it unlocks something. A subject/thing is not key - it’s probably important)
 
-  [‘OECD-FAO Agricultural Outlook 2021-2030’]: https://www.fao.org/3/cb5332en/cb5332en.pdf
-  [‘Agriculture in the United Kingdom 2020’]: https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1056618/AUK2020_22feb22.pdf
-  [‘A systematic review of medical practice variation in OECD countries’]: https://www.sciencedirect.com/journal/health-policy
-  [CPI collection page]: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/previousReleases
-  [release]: https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/september2023
-  [collection page]: https://www.gov.uk/government/collections/united-kingdom-food-security-report
-  [uktradeinfo]: https://www.uktradeinfo.com/trade-data/ots-custom-table/
+  [How to write for Defra (sharepoint.com)]: https://defra.sharepoint.com/sites/Defraintranet/SitePages/Writing-principles.aspx
